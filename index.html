@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5a623">
+  <meta name="description" content="Offline-first FIRST Tech Challenge scouting app for BIOBUZZ">
+  <title>FTC Scouting · BIOBUZZ</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="28" height="28">
+      <div>
+        <div class="brand-title">FTC Scouting</div>
+        <div class="brand-sub" id="event-label">No event selected</div>
+      </div>
+    </div>
+    <span id="net-status" class="pill">Online</span>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <a href="#event" data-page="event">Event</a>
+    <a href="#pit" data-page="pit">Pit</a>
+    <a href="#match" data-page="match">Match</a>
+    <a href="#analysis" data-page="analysis">Analysis</a>
+    <a href="#settings" data-page="settings">Settings</a>
+  </nav>
+
+  <main id="app"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="qr-dialog">
+    <div class="dialog-head">
+      <h2 id="qr-title">QR code</h2>
+      <button class="btn ghost" id="qr-close" aria-label="Close">✕</button>
+    </div>
+    <div id="qr-body" class="qr-body"></div>
+    <div class="row qr-nav">
+      <button class="btn" id="qr-prev">◀ Prev</button>
+      <span id="qr-count"></span>
+      <button class="btn" id="qr-next">Next ▶</button>
+    </div>
+  </dialog>
+
+  <script src="vendor/qrcode.js"></script>
+  <script src="vendor/jsQR.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
