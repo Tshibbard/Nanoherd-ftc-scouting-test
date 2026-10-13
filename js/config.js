@@ -10,7 +10,8 @@
 
 export const SEASONS = {
   '2627': {
-    key: '2627',
+    key: '2627', // The Orange Alliance season key
+    ftcscoutSeason: 2026, // FTCScout season (starting year)
     name: 'BIOBUZZ',
     years: '2026-2027',
 

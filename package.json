@@ -1,0 +1,9 @@
+{
+  "name": "ftc-scouting",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "toa-snapshot": "node scripts/toa-snapshot.mjs"
+  }
+}

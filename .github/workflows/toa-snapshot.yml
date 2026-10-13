@@ -1,0 +1,54 @@
+name: Orange Alliance snapshot
+
+# Uses the TOA_API_KEY repository secret to download Orange Alliance data
+# into data/toa/. The web app reads those JSON files as its backup data
+# source, so the key never ships to browsers.
+
+on:
+  workflow_dispatch:
+    inputs:
+      event_keys:
+        description: 'Extra TOA event keys to fetch (space separated), e.g. 2627-CA-SDQ1'
+        required: false
+        default: ''
+  schedule:
+    - cron: '17 * * * *' # hourly; schedules only run on the default branch
+  push:
+    paths:
+      - 'data/toa-events.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: toa-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Download Orange Alliance data
+        env:
+          TOA_API_KEY: ${{ secrets.TOA_API_KEY }}
+          EVENT_KEYS: ${{ inputs.event_keys }}
+        run: node scripts/toa-snapshot.mjs
+
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/toa
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update Orange Alliance snapshot"
+            git push
+          fi

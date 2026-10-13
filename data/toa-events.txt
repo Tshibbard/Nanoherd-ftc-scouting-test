@@ -1,0 +1,3 @@
+# Orange Alliance event keys to snapshot for the app's backup data source.
+# One per line, e.g.
+# 2627-CA-SDQ1

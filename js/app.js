@@ -1,6 +1,7 @@
 import { season } from './config.js';
 import * as store from './storage.js';
-import * as toa from './toa.js';
+import * as data from './datasource.js';
+import { compareMatches } from './schedule.js';
 import { encodeRecords, decodePayload, qrSvg, startScanner, scanFile } from './qr.js';
 import { recordPoints, teamStats, pickScores, DEFAULT_WEIGHTS, toCsv } from './analysis.js';
 
@@ -22,7 +23,7 @@ function toast(msg, kind = '') {
   el.textContent = msg;
   el.className = `toast show ${kind}`;
   clearTimeout(toast.t);
-  toast.t = setTimeout(() => { el.className = 'toast'; }, 3000);
+  toast.t = setTimeout(() => { el.className = 'toast'; }, kind === 'err' ? 7000 : 3000);
 }
 
 // Navigate, re-rendering even when the hash is unchanged.
@@ -158,17 +159,17 @@ function renderEvent() {
   </section>
 
   <section class="card">
-    <h3>Load from The Orange Alliance</h3>
-    ${settings.toaKey ? '' : '<p class="warn-text">Add your Orange Alliance API key on the Settings tab to download events.</p>'}
+    <h3>Load event data</h3>
+    <p><small>From <b>FTCScout</b>, with <b>The Orange Alliance</b> as a backup when FTCScout is down or doesn't have the event yet.</small></p>
     <div class="row">
       <button class="btn" id="load-events">${seasonList.length ? 'Refresh' : 'Load'} ${esc(cfg.years)} events</button>
-      ${list.fetchedAt && seasonList.length ? `<small>${seasonList.length} events, fetched ${new Date(list.fetchedAt).toLocaleDateString()}</small>` : ''}
+      ${list.fetchedAt && seasonList.length ? `<small>${seasonList.length} events from ${list.source === 'toa' ? 'Orange Alliance' : 'FTCScout'}, fetched ${new Date(list.fetchedAt).toLocaleDateString()}</small>` : ''}
     </div>
     ${seasonList.length ? `
       <label class="field wide"><span class="lbl">Search events</span><input id="ev-search" placeholder="Name, city, or key"></label>
       <div id="ev-results" class="list scroll"></div>` : ''}
     <div class="row">
-      <input id="ev-key" placeholder="Event key, e.g. 2627-CA-SDQ1" value="">
+      <input id="ev-key" placeholder="Event code (USCASDQ1) or TOA key (2627-CA-SDQ1)" value="">
       <button class="btn primary" id="load-key">Load event</button>
     </div>
   </section>
@@ -177,17 +178,17 @@ function renderEvent() {
     <h3>Saved events</h3>
     ${cached.length ? `<div class="list">${cached.map((e) => `
       <div class="list-item ${e.key === settings.eventKey ? 'active' : ''}">
-        <div><b>${esc(e.name)}</b><br><small><code>${esc(e.key)}</code> · ${e.teams.length} teams · ${e.matches.length} matches${e.source === 'manual' ? ' · manual' : ''}</small></div>
+        <div><b>${esc(e.name)}</b><br><small><code>${esc(e.key)}</code> · ${e.teams.length} teams · ${e.matches.length} matches${e.source === 'manual' ? ' · manual' : e.source === 'toa' ? ' · Orange Alliance' : e.via === 'toa' ? ' · Orange Alliance backup' : ' · FTCScout'}</small></div>
         <div class="row">
           ${e.key === settings.eventKey ? '<span class="pill ok">Current</span>' : `<button class="btn" data-use="${esc(e.key)}">Use</button>`}
-          ${e.source === 'toa' ? `<button class="btn" data-refresh="${esc(e.key)}">Refresh</button>` : ''}
+          ${e.source !== 'manual' ? `<button class="btn" data-refresh="${esc(e.key)}">Refresh</button>` : ''}
           <button class="btn danger ghost" data-del="${esc(e.key)}">Remove</button>
         </div>
       </div>`).join('')}</div>` : '<p>No events saved yet.</p>'}
   </section>
 
   <section class="card">
-    <h3>Manual setup (no internet / event not on TOA)</h3>
+    <h3>Manual setup (no internet / event not online yet)</h3>
     <label class="field wide"><span class="lbl">Event name</span><input id="m-name" value="${esc(ev?.source === 'manual' ? ev.name : '')}" placeholder="Scrimmage"></label>
     <label class="field wide"><span class="lbl">Team numbers (comma or space separated, optional "number:name")</span>
       <textarea id="m-teams" rows="3" placeholder="12345:Nanoherd, 23456, 34567">${esc(ev?.source === 'manual' ? ev.teams.map((t) => t.name ? `${t.number}:${t.name}` : t.number).join(', ') : '')}</textarea></label>
@@ -210,27 +211,29 @@ function renderEvent() {
   $('#load-events').onclick = async () => {
     try {
       toast('Loading events…');
-      const events = await toa.fetchSeasonEvents(cfg.key, settings.toaKey);
-      store.saveEventList({ season: cfg.key, fetchedAt: Date.now(), events });
-      toast(`Loaded ${events.length} events`, 'ok');
+      const { source, events } = await data.fetchSeasonEvents(cfg, settings);
+      store.saveEventList({ season: cfg.key, source, fetchedAt: Date.now(), events });
+      toast(`Loaded ${events.length} events${source === 'toa' ? ' from Orange Alliance (FTCScout unavailable)' : ''}`, source === 'toa' ? 'warn' : 'ok');
       route();
     } catch (err) { toast(err.message, 'err'); }
   };
 
   const loadEvent = async (key) => {
     if (!key) return;
+    const name = seasonList.find((e) => e.key === key)?.name || store.getEvent(key)?.name || '';
     try {
       toast('Downloading event data…');
-      const ev2 = await toa.fetchEvent(key, settings.toaKey);
-      if (!ev2.teams.length && !ev2.matches.length) toast('Event loaded, but TOA has no teams or matches for it yet', 'warn');
-      else toast(`Loaded ${ev2.name}`, 'ok');
+      const ev2 = await data.fetchEvent(key, cfg, settings, name);
+      const src = ev2.via === 'toa' ? 'Orange Alliance' : 'FTCScout';
+      if (!ev2.teams.length && !ev2.matches.length) toast(`Event loaded, but ${src} has no teams or matches for it yet`, 'warn');
+      else toast(`Loaded ${ev2.name}${ev2.via === 'toa' && ev2.source !== 'toa' ? ' from Orange Alliance backup' : ''}`, ev2.via === 'toa' && ev2.source !== 'toa' ? 'warn' : 'ok');
       store.saveEvent(ev2);
       settings = store.saveSettings({ eventKey: key });
       route();
     } catch (err) { toast(err.message, 'err'); }
   };
 
-  $('#load-key').onclick = () => loadEvent($('#ev-key').value.trim());
+  $('#load-key').onclick = () => { const k = $('#ev-key').value.trim(); if (k) loadEvent(data.normalizeKey(k, cfg)); };
   app.addEventListener('click', (e) => {
     const t = e.target.closest('[data-pick],[data-use],[data-refresh],[data-del]');
     if (!t) return;
@@ -258,7 +261,7 @@ function renderEvent() {
         const half = Math.ceil(nums.length / 2);
         return { key: n, name: n.toUpperCase(), label: n, red: nums.slice(0, half), blue: nums.slice(half), redScore: null, blueScore: null };
       });
-    matches.sort(toa.compareMatches);
+    matches.sort(compareMatches);
     const key = ev?.source === 'manual' ? ev.key : `manual-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
     store.saveEvent({ key, name, location: '', start: '', teams: [...teamMap.values()].sort((a, b) => a.number - b.number), matches, rankings: [], fetchedAt: Date.now(), source: 'manual' });
     settings = store.saveSettings({ eventKey: key });
@@ -507,7 +510,7 @@ function renderTeam(box, s, evKey) {
   if (!s) { box.innerHTML = '<section class="card"><p>No data for that team.</p></section>'; return; }
   const ev = currentEvent();
   const sched = (ev?.matches || []).filter((m) => m.red.includes(s.team) || m.blue.includes(s.team));
-  const recs = [...s.records].sort((a, b) => toa.compareMatches({ name: a.match }, { name: b.match }));
+  const recs = [...s.records].sort((a, b) => compareMatches({ name: a.match }, { name: b.match }));
   const pitVal = (f) => {
     const v = s.pit?.d?.[f.id];
     if (v == null || v === '') return '—';
@@ -756,8 +759,9 @@ function renderSettings() {
   <section class="card">
     <h2>Settings</h2>
     <label class="field wide"><span class="lbl">Scout name</span><input id="s-scout" value="${esc(settings.scout)}"></label>
-    <label class="field wide"><span class="lbl">The Orange Alliance API key</span><input id="s-key" value="${esc(settings.toaKey)}" autocomplete="off" spellcheck="false"></label>
-    <p><small>Get a free key from your account page on <a href="https://theorangealliance.org" target="_blank" rel="noopener">theorangealliance.org</a>. It is stored only on this device.</small></p>
+    <label class="field wide"><span class="lbl">The Orange Alliance API key (optional)</span><input id="s-key" value="${esc(settings.toaKey)}" autocomplete="off" spellcheck="false"></label>
+    <p><small>Get a free key from your account page on <a href="https://theorangealliance.org" target="_blank" rel="noopener">theorangealliance.org</a>. It is stored only on this device.
+      You usually don't need one: event data comes from FTCScout, and the Orange Alliance backup is published by the team's GitHub Action from the <code>TOA_API_KEY</code> repository secret. A key here just enables live Orange Alliance requests from this device.</small></p>
     <button class="btn primary" id="s-save">Save</button>
   </section>
   <section class="card">

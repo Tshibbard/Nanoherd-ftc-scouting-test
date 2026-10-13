@@ -1,6 +1,6 @@
 // Service worker: caches the app shell so the app opens and works with no
 // internet. Bump VERSION whenever any cached file changes.
-const VERSION = 'ftcs-v1';
+const VERSION = 'ftcs-v2';
 const SHELL = [
   './',
   'index.html',
@@ -11,6 +11,9 @@ const SHELL = [
   'js/toa.js',
   'js/qr.js',
   'js/analysis.js',
+  'js/schedule.js',
+  'js/ftcscout.js',
+  'js/datasource.js',
   'vendor/qrcode.js',
   'vendor/jsQR.js',
   'manifest.webmanifest',

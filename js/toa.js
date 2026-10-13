@@ -1,14 +1,17 @@
-// The Orange Alliance (https://theorangealliance.org) API client.
+// The Orange Alliance (https://theorangealliance.org) API client, used as
+// the backup data source when FTCScout is unavailable.
 // Requests need an API key (free, from your TOA account page) sent as
 // X-TOA-Key, plus an X-Application-Origin name. Responses are normalized
 // into the app's own shapes and cached in storage for offline use.
+
+import { compareMatches } from './schedule.js';
 
 const BASE = 'https://theorangealliance.org/api';
 const ORIGIN = 'FTC Scouting App';
 
 async function get(path, key) {
-  if (!key) throw new Error('Add your Orange Alliance API key in Settings first.');
-  if (!navigator.onLine) throw new Error('You are offline. Using cached data.');
+  if (!key) throw new Error('No Orange Alliance API key.');
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) throw new Error('You are offline. Using cached data.');
   const res = await fetch(BASE + path, {
     headers: {
       'Content-Type': 'application/json',
@@ -44,6 +47,7 @@ export async function fetchSeasonEvents(seasonKey, key) {
       name: e.event_name,
       location: [e.city, e.state_prov, e.country].filter(Boolean).join(', '),
       start: (e.start_date || '').slice(0, 10),
+      source: 'toa',
     }))
     .sort((a, b) => (a.start || '').localeCompare(b.start || '') || a.name.localeCompare(b.name));
 }
@@ -116,14 +120,4 @@ export async function fetchEvent(eventKey, key) {
     fetchedAt: Date.now(),
     source: 'toa',
   };
-}
-
-// Qualifications first, then playoffs, numerically within each.
-export function compareMatches(a, b) {
-  const order = (n) => {
-    const c = String(n.name || n)[0];
-    return { P: 0, Q: 1, S: 2, E: 2, F: 3 }[c] ?? 4;
-  };
-  const num = (n) => parseInt(String(n.name || n).replace(/^\D+/, ''), 10) || 0;
-  return order(a) - order(b) || num(a) - num(b) || String(a.name || a).localeCompare(String(b.name || b));
 }
