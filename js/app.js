@@ -2,6 +2,7 @@ import { season, SEASONS } from './config.js';
 import * as store from './storage.js';
 import * as data from './datasource.js';
 import { compareMatches } from './schedule.js';
+import { repairEvent } from './ftcscout.js';
 import { encodeRecords, decodePayload, qrSvg, startScanner, scanFile } from './qr.js';
 import { recordPoints, teamStats, pickScores, DEFAULT_WEIGHTS, toCsv } from './analysis.js';
 
@@ -990,6 +991,11 @@ if ('serviceWorker' in navigator) {
     document.getElementById('update-reload').onclick = () => location.reload();
   });
   navigator.serviceWorker.register('sw.js').then((r) => r.update()).catch(() => {});
+}
+
+// Fix match names in events saved before the FTCScout match-number fix.
+for (const ev of Object.values(store.getEvents())) {
+  if (repairEvent(ev)) store.saveEvent(ev);
 }
 
 route();
