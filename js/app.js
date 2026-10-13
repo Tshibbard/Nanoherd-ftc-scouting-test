@@ -496,7 +496,7 @@ function renderMatch(matchArg, teamArg) {
 
 const COLS = [
   ['team', 'Team'], ['n', 'Scouted'], ['total', 'Avg pts'], ['auto', 'Auto'], ['teleop', 'Tele'], ['endgame', 'End'],
-  ['tips', 'Tips'], ['cells', 'Cells'], ['flower', 'Flower'], ['park', 'Park%'], ['driver', 'Driver'], ['died', 'Died%'], ['max', 'Max'], ['sd', 'SD'], ['rank', 'Rank'],
+  ['tips', 'Tips'], ['cells', 'Cells'], ['flower', 'Flower'], ['park', 'Park%'], ['driver', 'Driver'], ['died', 'Died%'], ['max', 'Max'], ['sd', 'SD'], ['rank', 'Rank'], ['opr', 'OPR'],
 ];
 let sortKey = 'total';
 let sortDir = -1;
@@ -508,7 +508,7 @@ function renderAnalysis(arg) {
   if (arg && /^\d+$/.test(arg)) { anaTab = 'team'; } else if (arg) { anaTab = arg; }
   if (stopScan) { stopScan(); stopScan = null; }
 
-  const tabs = [['teams', 'Teams'], ['picklist', 'Pick list'], ['scan', 'Scan QR'], ['data', 'Data']];
+  const tabs = [['teams', 'Teams'], ['results', 'Event results'], ['picklist', 'Pick list'], ['scan', 'Scan QR'], ['data', 'Data']];
   app.innerHTML = `
   <nav class="subtabs">${tabs.map(([k, l]) => `<a href="#analysis/${k}" class="${anaTab === k ? 'active' : ''}">${l}</a>`).join('')}</nav>
   <div id="ana"></div>`;
@@ -519,6 +519,7 @@ function renderAnalysis(arg) {
   const stats = teamStats(ev, store.getMatchRecords(evKey), store.getPitRecords(evKey), cfg);
   if (anaTab === 'team') return renderTeam(box, stats.find((s) => s.team === Number(arg)), evKey);
   if (anaTab === 'picklist') return renderPickList(box, stats, evKey);
+  if (anaTab === 'results') return ev ? renderResults(box, ev, stats) : (box.innerHTML = noEvent());
   return renderTeams(box, stats);
 }
 
@@ -528,6 +529,7 @@ function renderTeams(box, stats) {
     if (['park', 'died'].includes(k)) return s.n ? pct(s[k]) : '';
     if (k === 'n') return `${s.n}${s.pit ? ' <span title="pit scouted">🔧</span>' : ''}`;
     if (k === 'rank') return s.rank ?? '';
+    if (k === 'opr') return s.opr != null ? fmt(s.opr) : '';
     return s.n ? fmt(s[k]) : '';
   };
   const sorted = [...stats].sort((a, b) => {
@@ -564,6 +566,84 @@ function renderTeams(box, stats) {
       </div><span class="val">${fmt(s.total)}</span></div>`).join('')}` : '';
 }
 
+// ---- official results (FTCScout / Orange Alliance) -----------------------------
+
+// "autoPoints" -> "Auto points", "dcPoints" -> "TeleOp points"
+function fieldLabel(k) {
+  const words = k.replace(/Np$/, 'NoPenalties').replace(/^dc/, 'teleOp').replace(/([a-z0-9])([A-Z])/g, '$1 $2').toLowerCase();
+  const fixed = words.replace('tele op', 'teleOp').replace('no penalties', '(no penalties)');
+  return fixed.charAt(0).toUpperCase() + fixed.slice(1);
+}
+
+function breakdownTable(cols) {
+  const keys = [...new Set(cols.flatMap((c) => Object.keys(c.data || {})))];
+  if (!keys.length) return '<p><small>No score breakdown available.</small></p>';
+  return `<div class="table-wrap"><table class="data breakdown"><thead><tr><th></th>${cols.map((c) => `<th class="${c.cls || ''}">${esc(c.label)}</th>`).join('')}</tr></thead>
+    <tbody>${keys.map((k) => `<tr><td>${esc(fieldLabel(k))}</td>${cols.map((c) => `<td>${c.data?.[k] != null ? fmt(c.data[k], Number.isInteger(c.data[k]) ? 0 : 1) : ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+
+// Official match list; tap a match for its full score breakdown.
+function matchList(matches, team) {
+  if (!matches.length) return '<p>No matches published yet.</p>';
+  const teamsHtml = (list) => list.map((t) => `<a href="#analysis/${t}" class="${t === team ? 'me' : ''}">${t}</a>`).join(' ');
+  return `<div class="match-list">${matches.map((m) => {
+    const played = m.redScore != null && m.blueScore != null;
+    const win = played ? (m.redScore > m.blueScore ? 'red' : m.blueScore > m.redScore ? 'blue' : 'tie') : '';
+    const row = `<span class="mname">${esc(m.name)}</span>
+      <span class="red teams">${teamsHtml(m.red)}</span>
+      <span class="mscore">${played ? `<span class="red ${win === 'red' ? 'win' : ''}">${m.redScore}</span>–<span class="blue ${win === 'blue' ? 'win' : ''}">${m.blueScore}</span>` : '<small>—</small>'}</span>
+      <span class="blue teams">${teamsHtml(m.blue)}</span>`;
+    return m.breakdown
+      ? `<details class="match-row"><summary>${row}</summary>${breakdownTable([{ label: 'Red', cls: 'red', data: m.breakdown.red }, { label: 'Blue', cls: 'blue', data: m.breakdown.blue }])}</details>`
+      : `<div class="match-row"><div class="summary">${row}</div></div>`;
+  }).join('')}</div>`;
+}
+
+function renderResults(box, ev, stats) {
+  const played = ev.matches.filter((m) => m.redScore != null).length;
+  const ranked = stats.filter((s) => s.official).sort((a, b) => (a.rank ?? 1e9) - (b.rank ?? 1e9));
+  const src = ev.source === 'manual' ? 'entered by hand' : ev.via === 'toa' || ev.source === 'toa' ? 'from The Orange Alliance' : 'from FTCScout';
+  box.innerHTML = `
+  <section class="card">
+    <h2>Event results <small>${esc(src)}</small></h2>
+    <p>${esc(ev.name)} · ${played} of ${ev.matches.length} matches played · updated ${new Date(ev.fetchedAt).toLocaleString()}</p>
+    ${ev.source !== 'manual' ? '<button class="btn primary" id="res-refresh">Refresh results</button>' : ''}
+  </section>
+  <section class="card">
+    <h3>Rankings</h3>
+    ${ranked.length ? `<div class="table-wrap"><table class="data">
+      <thead><tr><th>Team</th><th>Rank</th><th>RP</th><th>W-L-T</th><th>OPR</th><th>Avg score</th><th>Played</th><th>Scouted</th></tr></thead>
+      <tbody>${ranked.map((s) => `<tr><td><a href="#analysis/${s.team}"><b>${s.team}</b></a><br><small>${esc(s.name)}</small></td>
+        <td>${s.rank ?? ''}</td><td>${s.official.rp != null ? fmt(s.official.rp, Number.isInteger(s.official.rp) ? 0 : 2) : ''}</td><td>${s.wlt}</td>
+        <td>${s.opr != null ? fmt(s.opr) : ''}</td><td>${s.avgScore != null ? fmt(s.avgScore) : ''}</td><td>${s.official.played ?? ''}</td><td>${s.n || ''}</td></tr>`).join('')}</tbody>
+    </table></div>
+    <p><small>OPR estimates the points a team adds to its alliance each match. Avg score is its alliances' average. Both come from the official results.</small></p>`
+    : '<p>No rankings published yet.</p>'}
+  </section>
+  <section class="card">
+    <h3>Matches</h3>
+    <input id="res-filter" type="number" inputmode="numeric" placeholder="Filter by team number">
+    <div id="res-matches">${matchList(ev.matches)}</div>
+  </section>`;
+  $('#res-filter', box).oninput = (e) => {
+    const t = parseInt(e.target.value, 10);
+    $('#res-matches', box).innerHTML = matchList(t ? ev.matches.filter((m) => m.red.includes(t) || m.blue.includes(t)) : ev.matches, t);
+  };
+  const btn = $('#res-refresh', box);
+  if (btn) {
+    btn.onclick = async () => {
+      btn.disabled = true;
+      try {
+        toast('Refreshing results…');
+        const fresh = await data.fetchEvent(ev.key, cfg, settings, ev.name);
+        store.saveEvent(fresh);
+        toast(`Updated ${fresh.name}${fresh.via === 'toa' && fresh.source !== 'toa' ? ' from Orange Alliance backup' : ''}`, 'ok');
+        renderAnalysis('results');
+      } catch (err) { toast(err.message, 'err'); btn.disabled = false; }
+    };
+  }
+}
+
 function renderTeam(box, s, evKey) {
   if (!s) { box.innerHTML = '<section class="card"><p>No data for that team.</p></section>'; return; }
   const ev = currentEvent();
@@ -588,8 +668,20 @@ function renderTeam(box, s, evKey) {
       <div><b>${s.n ? pct(s.park) : '—'}</b><small>park</small></div>
       <div><b>${s.n ? pct(s.died) : '—'}</b><small>died / no-show</small></div>
       <div><b>${s.rank ?? '—'}</b><small>rank ${s.wlt}</small></div>
+      <div><b>${s.opr != null ? fmt(s.opr) : '—'}</b><small>official OPR</small></div>
     </div>
   </section>
+  ${s.official ? `<section class="card">
+    <h3>Official stats</h3>
+    <div class="stats">
+      <div><b>${s.rank ?? '—'}</b><small>rank</small></div>
+      <div><b>${s.official.rp != null ? fmt(s.official.rp, Number.isInteger(s.official.rp) ? 0 : 2) : '—'}</b><small>ranking points</small></div>
+      <div><b>${esc(s.wlt) || '—'}</b><small>W-L-T</small></div>
+      <div><b>${s.official.played ?? '—'}</b><small>quals played</small></div>
+    </div>
+    ${Object.keys(s.official.oprBreakdown || {}).length || Object.keys(s.official.avgBreakdown || {}).length
+      ? `<details><summary>OPR &amp; average breakdown</summary>${breakdownTable([{ label: 'OPR', data: s.official.oprBreakdown }, { label: 'Avg', data: s.official.avgBreakdown }])}</details>` : ''}
+  </section>` : ''}
   <section class="card">
     <h3>Pit scouting</h3>
     ${s.pit ? `<dl class="pit">${cfg.pitFields.map((f) => `<dt>${esc(f.label)}</dt><dd>${pitVal(f)}</dd>`).join('')}</dl>
@@ -609,9 +701,7 @@ function renderTeam(box, s, evKey) {
       }).join('')}</tbody>
     </table></div>
   </section>
-  ${sched.length ? `<section class="card"><h3>Schedule</h3><div class="list">${sched.map((m) => `<div class="list-item"><div><b>${esc(m.name)}</b>
-    <span class="red">${m.red.join(' · ')}</span> vs <span class="blue">${m.blue.join(' · ')}</span></div>
-    <div>${m.redScore != null ? `<span class="red">${m.redScore}</span>-<span class="blue">${m.blueScore}</span>` : ''}</div></div>`).join('')}</div></section>` : ''}`;
+  ${sched.length ? `<section class="card"><h3>Official matches</h3>${matchList(sched, s.team)}</section>` : ''}`;
   $$('[data-delrec]', box).forEach((b) => {
     b.onclick = () => { if (confirm('Delete this match entry from this device?')) { store.deleteMatchRecord(b.dataset.delrec); renderAnalysis(String(s.team)); } };
   });
@@ -649,7 +739,7 @@ function renderPickList(box, stats, evKey) {
           <span class="handle" aria-hidden="true">⋮⋮</span>
           <span class="num">${i + 1}</span>
           <div class="who"><a href="#analysis/${t}"><b>${t}</b></a> <small>${esc(s?.name || '')}</small><br>
-            <small>${s?.n ? `${fmt(s.total)} pts · auto ${fmt(s.auto)} · end ${fmt(s.endgame)} · tips ${fmt(s.tips)} · ${s.n} m` : 'no match data'}${s?.rank ? ` · rank ${s.rank}` : ''}</small></div>
+            <small>${s?.n ? `${fmt(s.total)} pts · auto ${fmt(s.auto)} · end ${fmt(s.endgame)} · tips ${fmt(s.tips)} · ${s.n} m` : 'no match data'}${s?.rank ? ` · rank ${s.rank}` : ''}${s?.opr != null ? ` · OPR ${fmt(s.opr)}` : ''}</small></div>
           <span class="score-badge" title="pick score">${scores.get(t) ?? 0}</span>
           <div class="pl-actions">
             <button class="btn ghost" data-mv="-1" aria-label="Move up">▲</button>

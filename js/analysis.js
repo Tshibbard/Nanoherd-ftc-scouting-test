@@ -63,11 +63,14 @@ export function teamStats(event, matchRecs, pitRecs, seasonCfg) {
       rank: rk?.rank ?? null,
       rp: rk?.rp ?? null,
       wlt: rk ? `${rk.wins ?? 0}-${rk.losses ?? 0}-${rk.ties ?? 0}` : '',
+      opr: rk?.opr ?? null,
+      avgScore: rk?.avg ?? null,
+      official: rk || null,
     };
   });
 }
 
-export const DEFAULT_WEIGHTS = { total: 5, auto: 2, endgame: 2, tips: 2, driver: 1, reliability: 3, consistency: 1 };
+export const DEFAULT_WEIGHTS = { total: 5, auto: 2, endgame: 2, tips: 2, driver: 1, reliability: 3, consistency: 1, opr: 3 };
 
 // Weighted pick score. Each metric is scaled 0..1 across the event so the
 // weights are comparable; reliability and consistency reward fewer
@@ -76,10 +79,13 @@ export function pickScores(stats, weights) {
   const scouted = stats.filter((s) => s.n > 0);
   const maxOf = (k) => Math.max(1e-9, ...scouted.map((s) => s[k]));
   const maxSd = maxOf('sd');
-  const m = { total: maxOf('total'), auto: maxOf('auto'), endgame: maxOf('endgame'), tips: maxOf('tips'), driver: 5 };
+  const maxOpr = Math.max(1e-9, ...stats.map((s) => s.opr || 0));
+  const m = { opr: maxOpr, total: maxOf('total'), auto: maxOf('auto'), endgame: maxOf('endgame'), tips: maxOf('tips'), driver: 5 };
   const scores = new Map();
   for (const s of stats) {
-    if (!s.n) { scores.set(s.team, 0); continue; }
+    const oprPart = (weights.opr ?? 0) * (s.opr > 0 ? s.opr / m.opr : 0);
+    // Teams nobody scouted still rank by their official OPR.
+    if (!s.n) { scores.set(s.team, Math.round(oprPart * 100) / 100); continue; }
     const score =
       weights.total * (s.total / m.total) +
       weights.auto * (s.auto / m.auto) +
@@ -87,7 +93,8 @@ export function pickScores(stats, weights) {
       weights.tips * (s.tips / m.tips) +
       weights.driver * (s.driver / m.driver) +
       weights.reliability * (1 - s.died) +
-      weights.consistency * (1 - s.sd / maxSd);
+      weights.consistency * (1 - s.sd / maxSd) +
+      oprPart;
     scores.set(s.team, Math.round(score * 100) / 100);
   }
   return scores;
