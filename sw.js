@@ -1,6 +1,6 @@
 // Service worker: caches the app shell so the app opens and works with no
 // internet. Bump VERSION whenever any cached file changes.
-const VERSION = 'ftcs-v7';
+const VERSION = 'ftcs-v8';
 const SHELL = [
   './',
   'index.html',

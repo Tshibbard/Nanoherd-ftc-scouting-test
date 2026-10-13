@@ -51,14 +51,42 @@ export async function fetchSeasonEvents(seasonYear) {
     .sort((a, b) => (a.start || '').localeCompare(b.start || '') || a.name.localeCompare(b.name));
 }
 
+// FTCScout's REST matches have no matchNum field: it's derived from the id,
+// which FTCScout builds as level * 10000 + series * 1000 + matchNum
+// (remote events: teamNumber * 1000 + matchNum), so matchNum = id % 1000.
+function matchNumOf(m) {
+  if (Number.isFinite(m.matchNum)) return m.matchNum;
+  return Number.isFinite(Number(m.id)) ? Number(m.id) % 1000 : null;
+}
+
 // Quals -> "Q12"; playoffs -> "SF1-2", "F1", "E3" (double elimination).
 export function matchName(m) {
   const lvl = String(m.tournamentLevel || '');
-  if (lvl.startsWith('Qual')) return `Q${m.matchNum}`;
-  if (lvl.startsWith('Semi')) return `SF${m.series}-${m.matchNum}`;
-  if (lvl.startsWith('Final')) return `F${m.matchNum}`;
-  if (lvl.startsWith('Double')) return `E${m.series}${m.matchNum > 1 ? '-' + m.matchNum : ''}`;
-  return `${lvl.slice(0, 1) || 'M'}${m.matchNum ?? m.id}`;
+  const num = matchNumOf(m);
+  const series = Number(m.series) || 0;
+  if (lvl.startsWith('Qual')) return `Q${num}`;
+  if (lvl.startsWith('Semi')) return `SF${series}-${num}`;
+  if (lvl.startsWith('Final')) return `F${num}`;
+  if (lvl.startsWith('Double')) return `E${series}${num > 1 ? '-' + num : ''}`;
+  if (lvl.startsWith('Practice')) return `P${num}`;
+  return `${lvl.slice(0, 1) || 'M'}${num ?? m.id}`;
+}
+
+// Events saved before the fix above have names like "Qundefined". Their
+// keys end in ":<id>", which is enough to rebuild the right name.
+export function repairEvent(ev) {
+  if (ev?.source !== 'ftcscout' || ev.via === 'toa') return false;
+  let changed = false;
+  for (const m of ev.matches || []) {
+    if (!String(m.name).includes('undefined')) continue;
+    const id = Number(String(m.key).split(':').pop());
+    if (!Number.isFinite(id)) continue;
+    m.name = matchName({ id, tournamentLevel: m.level, series: Math.floor(id / 1000) % 10 });
+    if (String(m.label).includes('undefined')) m.label = m.name;
+    changed = true;
+  }
+  if (changed) ev.matches.sort(compareMatches);
+  return changed;
 }
 
 async function fetchTeamNames(seasonYear, code) {
@@ -102,7 +130,8 @@ export async function fetchEvent(key) {
     const sorted = [...(m.teams || [])].sort((a, b) => String(a.station).localeCompare(String(b.station)));
     for (const p of sorted) {
       const num = Number(p.teamNumber);
-      if (!num) continue;
+      // Playoff alliances list a third team that sits out (onField false).
+      if (!num || p.onField === false || p.station === 'NotOnField') continue;
       addTeam(num);
       (String(p.alliance).toLowerCase() === 'blue' ? blue : red).push(num);
     }
