@@ -1,6 +1,6 @@
 // Service worker: caches the app shell so the app opens and works with no
 // internet. Bump VERSION whenever any cached file changes.
-const VERSION = 'ftcs-v4';
+const VERSION = 'ftcs-v5';
 const SHELL = [
   './',
   'index.html',
@@ -39,8 +39,13 @@ self.addEventListener('fetch', (e) => {
   // Never cache API calls; the app stores event data itself.
   if (e.request.method !== 'GET' || url.origin !== self.location.origin) return;
   // Network first so updates show up when online, cache when offline.
+  // 'no-cache' revalidates with the server instead of trusting the
+  // browser's HTTP cache (GitHub Pages allows 10 minutes of staleness).
+  const req = e.request.mode === 'navigate'
+    ? fetch(e.request.url, { cache: 'no-cache', credentials: 'same-origin' })
+    : fetch(e.request, { cache: 'no-cache' });
   e.respondWith(
-    fetch(e.request)
+    req
       .then((res) => {
         if (res.ok) {
           const copy = res.clone();

@@ -69,7 +69,7 @@ The BIOBUZZ point values come from Competition Manual Table 10-2: LEAVE 3, PARK 
 
 Field `id`s are written into QR codes. You can add or reorder fields freely, but don't reuse an old `id` for a different meaning. When a new season starts, add a new entry to `SEASONS` and set `DEFAULT_SEASON`.
 
-Whenever you change cached files, bump `VERSION` in `sw.js` so installed devices pick up the update.
+Whenever you change cached files, bump `VERSION` in `sw.js`. Open devices then show a **"A new version is ready — Reload"** bar. **Settings → Check for updates** forces a check and shows the current app version.
 
 ## Project layout
 

@@ -824,7 +824,16 @@ function renderSettings() {
   };
   const swEl = $('#sw-status');
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistration().then((r) => { swEl.innerHTML = `<small>Offline cache: ${r?.active ? 'ready ✓' : 'not installed yet (needs https or localhost)'}</small>`; });
+    Promise.all([navigator.serviceWorker.getRegistration(), caches.keys().catch(() => [])]).then(([r, keys]) => {
+      const ver = keys.find((k) => k.startsWith('ftcs-'));
+      swEl.innerHTML = `<small>Offline cache: ${r?.active ? `ready ✓${ver ? ` · app version ${esc(ver.replace('ftcs-', ''))}` : ''}` : 'not installed yet (needs https or localhost)'}</small>
+        <br><button class="btn" id="sw-update">Check for updates</button>`;
+      $('#sw-update').onclick = async () => {
+        toast('Checking for updates…');
+        await r?.update().catch(() => {});
+        location.reload();
+      };
+    });
   } else swEl.innerHTML = '<small>Offline cache: not supported by this browser</small>';
 }
 
@@ -853,7 +862,17 @@ window.addEventListener('offline', updateHeader);
 window.addEventListener('storage', () => { settings = store.getSettings(); });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // Only a page that was already controlled is running old code when a new
+  // service worker takes over; offer a reload rather than forcing one so
+  // nobody loses a half-filled form.
+  const hadController = Boolean(navigator.serviceWorker.controller);
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || document.getElementById('update-bar')) return;
+    document.body.insertAdjacentHTML('beforeend',
+      '<div id="update-bar" class="update-bar">A new version is ready. <button class="btn primary" id="update-reload">Reload</button></div>');
+    document.getElementById('update-reload').onclick = () => location.reload();
+  });
+  navigator.serviceWorker.register('sw.js').then((r) => r.update()).catch(() => {});
 }
 
 route();
