@@ -1,0 +1,2 @@
+# Team numbers whose event lists the snapshot Action downloads from
+# The Orange Alliance (backup for the Event page team search). One per line.

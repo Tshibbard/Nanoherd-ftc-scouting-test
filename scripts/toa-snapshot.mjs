@@ -6,6 +6,8 @@
 //
 // Event keys come from the arguments, the EVENT_KEYS env var (space
 // separated) and data/toa-events.txt (one per line, # for comments).
+// Team numbers (for the Event page's "find my team's events") come from
+// the TEAM_NUMBERS env var and data/toa-teams.txt the same way.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -35,12 +37,12 @@ async function writeIfChanged(file, data) {
   return true;
 }
 
-async function listedEvents() {
+async function listed(file, envVar, extra = []) {
   let text = '';
-  try { text = await readFile(path.join(root, 'data', 'toa-events.txt'), 'utf8'); } catch { /* optional */ }
+  try { text = await readFile(path.join(root, 'data', file), 'utf8'); } catch { /* optional */ }
   const fromFile = text.split('\n').map((l) => l.replace(/#.*/, '').trim()).filter(Boolean);
-  const fromEnv = (process.env.EVENT_KEYS || '').split(/[\s,]+/).filter(Boolean);
-  return [...new Set([...process.argv.slice(2), ...fromEnv, ...fromFile])];
+  const fromEnv = (process.env[envVar] || '').split(/[\s,]+/).filter(Boolean);
+  return [...new Set([...extra, ...fromEnv, ...fromFile])];
 }
 
 const cfg = season(DEFAULT_SEASON);
@@ -56,7 +58,7 @@ try {
   console.error(`season ${cfg.key}: ${err.message}`);
 }
 
-for (const ek of await listedEvents()) {
+for (const ek of await listed('toa-events.txt', 'EVENT_KEYS', process.argv.slice(2))) {
   try {
     const ev = await toa.fetchEvent(ek, key);
     const changed = await writeIfChanged(path.join(outDir, `event-${safeName(ek)}.json`), ev);
@@ -64,6 +66,19 @@ for (const ek of await listedEvents()) {
   } catch (err) {
     failed++;
     console.error(`${ek}: ${err.message}`);
+  }
+}
+
+for (const t of await listed('toa-teams.txt', 'TEAM_NUMBERS')) {
+  const number = parseInt(t, 10);
+  if (!number) continue;
+  try {
+    const result = await toa.fetchTeamEvents(cfg.key, number, key);
+    const changed = await writeIfChanged(path.join(outDir, `team-${number}-${cfg.key}.json`), { ...result, fetchedAt: Date.now() });
+    console.log(`team ${number}: ${result.events.length} events${changed ? '' : ' (unchanged)'}`);
+  } catch (err) {
+    failed++;
+    console.error(`team ${number}: ${err.message}`);
   }
 }
 

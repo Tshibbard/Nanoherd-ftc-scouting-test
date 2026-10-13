@@ -22,6 +22,7 @@ function write(name, value) {
 const DEFAULT_SETTINGS = {
   toaKey: '',
   scout: '',
+  myTeam: '',
   eventKey: '',
   station: 'R1',
   season: '2627',
@@ -65,6 +66,15 @@ export function getEventList() {
 
 export function saveEventList(list) {
   write('eventList', list);
+}
+
+// Last "find my team's events" result, kept so it shows offline too.
+export function getTeamEvents() {
+  return read('teamEvents', null);
+}
+
+export function saveTeamEvents(result) {
+  write('teamEvents', result);
 }
 
 // ---- scouting records -------------------------------------------------------

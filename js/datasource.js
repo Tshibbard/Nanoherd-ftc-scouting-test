@@ -52,6 +52,25 @@ export async function fetchSeasonEvents(cfg, settings) {
   }
 }
 
+// Events for one team: FTCScout, then TOA live, then a TOA snapshot.
+// Returns { source, team: { number, name }, events }.
+export async function fetchTeamEvents(cfg, settings, number) {
+  try {
+    return { source: 'ftcscout', ...(await ftcscout.fetchTeamEvents(cfg.ftcscoutSeason, number)) };
+  } catch (err) {
+    if (!navigator.onLine) throw err;
+    if (settings.toaKey) {
+      try { return { source: 'toa', ...(await toa.fetchTeamEvents(cfg.key, number, settings.toaKey)) }; } catch { /* fall through */ }
+    }
+    try {
+      return { source: 'toa', ...(await snapshot(`team-${number}-${cfg.key}.json`)) };
+    } catch {
+      if (err.notFound) throw err;
+      throw backupError(err, `has no data for team ${number} (add it to data/toa-teams.txt)`);
+    }
+  }
+}
+
 // Decide which service a typed-in key belongs to.
 export function normalizeKey(input, cfg) {
   const k = input.trim();

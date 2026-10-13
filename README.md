@@ -6,7 +6,7 @@ An offline-first, web-based scouting app for FIRST Tech Challenge. It's plain HT
 
 | Tab | What it does |
 | --- | --- |
-| **Event** | Downloads the season's events, then a single event's teams, match schedule, scores and rankings. **FTCScout** is the primary source and **The Orange Alliance** is the backup. Everything is cached on the device. You can also enter teams and a schedule by hand when there's no signal or the event isn't online yet. |
+| **Event** | Enter a **team number** to list the events that team is registered for this season, then tap one to load it. You can also search all of the season's events. Loading an event downloads its teams, match schedule, scores and rankings. **FTCScout** is the primary source and **The Orange Alliance** is the backup. Everything is cached on the device. You can also enter teams and a schedule by hand when there's no signal or the event isn't online yet. |
 | **Pit** | One-tap team grid (green = done) and a BIOBUZZ pit form: drivetrain, size, POLLEN/NECTAR handling, HIVE/FLOWER/GARDEN scoring, auto routine, claimed HIVE TIPs, endgame, and notes. |
 | **Match** | Pick your station (R1/R2/B1/B2) and the team fills in from the schedule. Big +/− counters and toggles cover Auto, TeleOp and Endgame, plus a live estimated score. **Save** shows the entry as a QR code and moves on to the next match. Saved entries can be edited. |
 | **Analysis** | Shows match and pit data from this device and from scanned QR codes. It has a sortable team table, a points-by-phase chart and team detail pages that combine pit info with each match entry. The **pick list** can be dragged or nudged with arrows, marked picked or do-not-pick, auto-sorted with adjustable weights and exported to CSV. The **Scan QR** tab reads codes through the camera or from photos. The **Data** tab has CSV export and JSON backup and restore. |
@@ -39,7 +39,7 @@ Setup:
 
 1. Get a free API key from your account page on <https://theorangealliance.org>.
 2. In GitHub, go to **Settings → Secrets and variables → Actions → New repository secret**. Name it `TOA_API_KEY` and paste the key as the value.
-3. Add the TOA keys of your events to `data/toa-events.txt`, one per line. Pushing that file runs the Action. You can also run it by hand from **Actions → Orange Alliance snapshot → Run workflow**, optionally with extra event keys.
+3. Add the TOA keys of your events to `data/toa-events.txt`, and your team numbers to `data/toa-teams.txt` (this is used by the team search when FTCScout is down), one per line. Pushing that file runs the Action. You can also run it by hand from **Actions → Orange Alliance snapshot → Run workflow**, optionally with extra event keys.
 4. The Action also runs hourly to keep snapshots fresh. It only commits when the data actually changed. Scheduled runs only happen on the repository's default branch.
 
 Optional: a key entered in the app's **Settings** tab enables live TOA requests from that device. It's stored only on that device.
