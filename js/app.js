@@ -32,6 +32,15 @@ function go(hash) {
   else location.hash = hash;
 }
 
+// The season is saved with the other settings, so it stays as chosen across
+// reloads, app updates and going offline. Each season remembers its own
+// current event, so switching back restores where you were.
+function setSeason(key) {
+  const seasonEvents = { ...(settings.seasonEvents || {}), [cfg.key]: settings.eventKey };
+  settings = store.saveSettings({ season: key, seasonEvents, eventKey: seasonEvents[key] || '' });
+  cfg = season(settings.season);
+}
+
 function currentEvent() {
   return settings.eventKey ? store.getEvent(settings.eventKey) : null;
 }
@@ -157,7 +166,13 @@ function renderEvent() {
 
   app.innerHTML = `
   <section class="card">
-    <h2>${esc(cfg.name)} <small>${esc(cfg.years)} season</small></h2>
+    <div class="season-row">
+      <h2>${esc(cfg.name)} <small>${esc(cfg.years)} season</small></h2>
+      <label class="field"><span class="lbl">Season</span><select id="ev-season">
+        ${Object.values(SEASONS).sort((a, b) => b.key.localeCompare(a.key)).map((x) => `<option value="${x.key}" ${x.key === cfg.key ? 'selected' : ''}>${esc(x.name)} ${esc(x.years)}${x.testOnly ? ' (testing)' : ''}</option>`).join('')}
+      </select></label>
+    </div>
+    ${cfg.testOnly ? `<p class="warn-text"><small><b>Testing mode:</b> events, teams and schedules come from ${esc(cfg.name)} ${esc(cfg.years)}, but the scouting forms are still BIOBUZZ. Switch back before competition.</small></p>` : ''}
     ${ev ? `<p><b>Current event:</b> ${esc(ev.name)} <code>${esc(ev.key)}</code><br>
       ${ev.teams.length} teams · ${ev.matches.length} matches · ${ev.location ? esc(ev.location) + ' · ' : ''}updated ${new Date(ev.fetchedAt).toLocaleString()}</p>`
     : '<p>Pick an event below. Event data is saved on this device, so load it while you have internet and it keeps working offline.</p>'}
@@ -224,6 +239,18 @@ function renderEvent() {
   };
   showResults('');
   $('#ev-search')?.addEventListener('input', (e) => showResults(e.target.value));
+
+  $('#ev-season').onchange = (e) => {
+    const next = season(e.target.value);
+    if (next.key === cfg.key) return;
+    if (!confirm(`Switch event data to ${next.name} ${next.years}${next.testOnly ? ' (testing)' : ''}?\n\nThe app stays on this season until you change it here again. Scouting data is kept.`)) {
+      e.target.value = cfg.key;
+      return;
+    }
+    setSeason(next.key);
+    toast(`Season set to ${cfg.name} ${cfg.years}`, next.testOnly ? 'warn' : 'ok');
+    route();
+  };
 
   $('#team-form').onsubmit = async (e) => {
     e.preventDefault();
@@ -790,10 +817,6 @@ function renderSettings() {
   <section class="card">
     <h2>Settings</h2>
     <label class="field wide"><span class="lbl">Scout name</span><input id="s-scout" value="${esc(settings.scout)}"></label>
-    <label class="field wide"><span class="lbl">Season for event data</span><select id="s-season">
-      ${Object.values(SEASONS).sort((a, b) => b.key.localeCompare(a.key)).map((x) => `<option value="${x.key}" ${x.key === cfg.key ? 'selected' : ''}>${esc(x.name)} ${esc(x.years)}${x.testOnly ? ' (testing)' : ''}</option>`).join('')}
-    </select></label>
-    ${cfg.testOnly ? `<p class="warn-text"><small>Testing mode: events, teams and schedules come from ${esc(cfg.name)} ${esc(cfg.years)}, but the scouting forms are still BIOBUZZ. Switch back before competition.</small></p>` : ''}
     <label class="field wide"><span class="lbl">The Orange Alliance API key (optional)</span><input id="s-key" value="${esc(settings.toaKey)}" autocomplete="off" spellcheck="false"></label>
     <p><small>Get a free key from your account page on <a href="https://theorangealliance.org" target="_blank" rel="noopener">theorangealliance.org</a>. It is stored only on this device.
       You usually don't need one: event data comes from FTCScout, and the Orange Alliance backup is published by the team's GitHub Action from the <code>TOA_API_KEY</code> repository secret. A key here just enables live Orange Alliance requests from this device.</small></p>
@@ -809,12 +832,9 @@ function renderSettings() {
     <button class="btn danger" id="s-clear">Delete all scouting data on this device</button>
   </section>`;
   $('#s-save').onclick = () => {
-    const seasonKey = $('#s-season').value;
-    const changed = seasonKey !== settings.season;
-    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim(), season: seasonKey });
-    cfg = season(settings.season);
-    toast(changed ? `Season set to ${cfg.name} ${cfg.years}` : 'Settings saved', 'ok');
-    if (changed) route();
+    // Only these two fields; the season is chosen on the Event page.
+    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim() });
+    toast('Settings saved', 'ok');
   };
   $('#s-clear').onclick = () => {
     if (confirm('Delete ALL match, pit and pick list data on this device? Export a backup first if unsure.')) {
@@ -859,7 +879,14 @@ function route() {
 window.addEventListener('hashchange', route);
 window.addEventListener('online', updateHeader);
 window.addEventListener('offline', updateHeader);
-window.addEventListener('storage', () => { settings = store.getSettings(); });
+// Another tab changed settings: pick up its season too, not just the values.
+window.addEventListener('storage', (e) => {
+  if (e.key && e.key !== 'ftcs.settings') return;
+  const prev = cfg.key;
+  settings = store.getSettings();
+  cfg = season(settings.season);
+  if (cfg.key !== prev) route();
+});
 
 if ('serviceWorker' in navigator) {
   // Only a page that was already controlled is running old code when a new

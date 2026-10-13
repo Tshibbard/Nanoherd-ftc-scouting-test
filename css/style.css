@@ -238,3 +238,7 @@ dialog::backdrop { background: rgb(0 0 0 / .55); }
   display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 16px; max-width: 92vw;
   background: var(--text); color: var(--bg); border-radius: 12px; box-shadow: 0 6px 24px rgb(0 0 0 / .25);
 }
+
+.season-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: end; justify-content: space-between; }
+.season-row h2 { margin: 0; }
+.season-row .field { min-width: 200px; }
