@@ -1,4 +1,4 @@
-import { season } from './config.js';
+import { season, SEASONS } from './config.js';
 import * as store from './storage.js';
 import * as data from './datasource.js';
 import { compareMatches } from './schedule.js';
@@ -53,8 +53,8 @@ function download(name, text, type = 'application/json') {
 function updateHeader() {
   const ev = currentEvent();
   document.getElementById('event-label').textContent = ev
-    ? `${cfg.name} · ${ev.name}`
-    : `${cfg.name} ${cfg.years} · no event selected`;
+    ? `${cfg.name}${cfg.testOnly ? " (test)" : ""} · ${ev.name}`
+    : `${cfg.name} ${cfg.years}${cfg.testOnly ? " (test)" : ""} · no event selected`;
   const net = document.getElementById('net-status');
   net.textContent = navigator.onLine ? 'Online' : 'Offline';
   net.className = `pill ${navigator.onLine ? 'ok' : 'warn'}`;
@@ -790,6 +790,10 @@ function renderSettings() {
   <section class="card">
     <h2>Settings</h2>
     <label class="field wide"><span class="lbl">Scout name</span><input id="s-scout" value="${esc(settings.scout)}"></label>
+    <label class="field wide"><span class="lbl">Season for event data</span><select id="s-season">
+      ${Object.values(SEASONS).sort((a, b) => b.key.localeCompare(a.key)).map((x) => `<option value="${x.key}" ${x.key === cfg.key ? 'selected' : ''}>${esc(x.name)} ${esc(x.years)}${x.testOnly ? ' (testing)' : ''}</option>`).join('')}
+    </select></label>
+    ${cfg.testOnly ? `<p class="warn-text"><small>Testing mode: events, teams and schedules come from ${esc(cfg.name)} ${esc(cfg.years)}, but the scouting forms are still BIOBUZZ. Switch back before competition.</small></p>` : ''}
     <label class="field wide"><span class="lbl">The Orange Alliance API key (optional)</span><input id="s-key" value="${esc(settings.toaKey)}" autocomplete="off" spellcheck="false"></label>
     <p><small>Get a free key from your account page on <a href="https://theorangealliance.org" target="_blank" rel="noopener">theorangealliance.org</a>. It is stored only on this device.
       You usually don't need one: event data comes from FTCScout, and the Orange Alliance backup is published by the team's GitHub Action from the <code>TOA_API_KEY</code> repository secret. A key here just enables live Orange Alliance requests from this device.</small></p>
@@ -805,8 +809,12 @@ function renderSettings() {
     <button class="btn danger" id="s-clear">Delete all scouting data on this device</button>
   </section>`;
   $('#s-save').onclick = () => {
-    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim() });
-    toast('Settings saved', 'ok');
+    const seasonKey = $('#s-season').value;
+    const changed = seasonKey !== settings.season;
+    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim(), season: seasonKey });
+    cfg = season(settings.season);
+    toast(changed ? `Season set to ${cfg.name} ${cfg.years}` : 'Settings saved', 'ok');
+    if (changed) route();
   };
   $('#s-clear').onclick = () => {
     if (confirm('Delete ALL match, pit and pick list data on this device? Export a backup first if unsure.')) {

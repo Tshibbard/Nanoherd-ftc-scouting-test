@@ -85,6 +85,18 @@ export const SEASONS = {
   },
 };
 
+// DECODE (2025-2026) for testing data loading against a finished season
+// with real events, teams and results. It reuses the BIOBUZZ scouting
+// forms; only the event data (FTCScout 2025 / TOA 2526) comes from DECODE.
+SEASONS['2526'] = {
+  ...SEASONS['2627'],
+  key: '2526',
+  ftcscoutSeason: 2025,
+  name: 'DECODE',
+  years: '2025-2026',
+  testOnly: true,
+};
+
 export const DEFAULT_SEASON = '2627';
 
 export function season(key) {

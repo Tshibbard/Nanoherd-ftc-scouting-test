@@ -44,6 +44,10 @@ Setup:
 
 Optional: a key entered in the app's **Settings** tab enables live TOA requests from that device. It's stored only on that device.
 
+### Testing with last season's data (DECODE 2025-2026)
+
+In **Settings → Season for event data**, choose **DECODE 2025-2026 (testing)**. The team search, event list and event downloads then use DECODE (FTCScout season `2025`, TOA `2526`), so you can try the app with real teams, schedules and results. The header shows **(test)**. The scouting forms stay BIOBUZZ. Switch back to BIOBUZZ before competition. To snapshot DECODE data from Orange Alliance, run the script with `SEASON=2526`.
+
 ## Running it
 
 ```bash

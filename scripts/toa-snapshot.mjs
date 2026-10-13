@@ -45,7 +45,7 @@ async function listed(file, envVar, extra = []) {
   return [...new Set([...extra, ...fromEnv, ...fromFile])];
 }
 
-const cfg = season(DEFAULT_SEASON);
+const cfg = season(process.env.SEASON || DEFAULT_SEASON); // SEASON=2526 for DECODE test data
 await mkdir(outDir, { recursive: true });
 let failed = 0;
 
