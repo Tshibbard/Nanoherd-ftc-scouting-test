@@ -1,4 +1,4 @@
-import { season } from './config.js';
+import { season, SEASONS } from './config.js';
 import * as store from './storage.js';
 import * as data from './datasource.js';
 import { compareMatches } from './schedule.js';
@@ -53,8 +53,8 @@ function download(name, text, type = 'application/json') {
 function updateHeader() {
   const ev = currentEvent();
   document.getElementById('event-label').textContent = ev
-    ? `${cfg.name} · ${ev.name}`
-    : `${cfg.name} ${cfg.years} · no event selected`;
+    ? `${cfg.name}${cfg.testOnly ? " (test)" : ""} · ${ev.name}`
+    : `${cfg.name} ${cfg.years}${cfg.testOnly ? " (test)" : ""} · no event selected`;
   const net = document.getElementById('net-status');
   net.textContent = navigator.onLine ? 'Online' : 'Offline';
   net.className = `pill ${navigator.onLine ? 'ok' : 'warn'}`;
@@ -149,6 +149,11 @@ function renderEvent() {
   const cached = Object.values(store.getEvents());
   const list = store.getEventList();
   const seasonList = list.season === cfg.key ? list.events : [];
+  const tl = store.getTeamEvents();
+  const teamList = tl && tl.season === cfg.key ? tl : null;
+  const eventRow = (e) => `<button class="list-item btn-like" data-pick="${esc(e.key)}">
+      <div><b>${esc(e.name)}</b><br><small>${esc(e.start)}${e.location ? ' · ' + esc(e.location) : ''} · <code>${esc(e.key)}</code></small></div>
+      ${e.key === settings.eventKey ? '<span class="pill ok">Current</span>' : store.getEvent(e.key) ? '<span class="pill">Saved</span>' : ''}</button>`;
 
   app.innerHTML = `
   <section class="card">
@@ -159,10 +164,23 @@ function renderEvent() {
   </section>
 
   <section class="card">
-    <h3>Load event data</h3>
+    <h3>Find events by team</h3>
+    <form class="row" id="team-form">
+      <input id="team-num" type="number" inputmode="numeric" min="1" placeholder="Team number" value="${esc(teamList?.team.number ?? settings.myTeam)}">
+      <button class="btn primary" type="submit">Show events</button>
+    </form>
+    ${teamList ? `<p><b>${teamList.team.number}${teamList.team.name ? ' ' + esc(teamList.team.name) : ''}</b>
+      <small>· ${teamList.events.length} ${esc(cfg.years)} event${teamList.events.length === 1 ? '' : 's'} · from ${teamList.source === 'toa' ? 'Orange Alliance' : 'FTCScout'}, ${new Date(teamList.fetchedAt).toLocaleString()}</small></p>
+      ${teamList.events.length
+        ? `<div class="list">${[...teamList.events].sort((a, b) => (a.start || '').localeCompare(b.start || '')).map(eventRow).join('')}</div><p><small>Tap an event to download its teams and schedule.</small></p>`
+        : '<p>No events found for this team yet this season. Registrations can take a while to appear; try again later or search all events below.</p>'}` : ''}
+  </section>
+
+  <section class="card">
+    <h3>Search all events</h3>
     <p><small>From <b>FTCScout</b>, with <b>The Orange Alliance</b> as a backup when FTCScout is down or doesn't have the event yet.</small></p>
     <div class="row">
-      <button class="btn" id="load-events">${seasonList.length ? 'Refresh' : 'Load'} ${esc(cfg.years)} events</button>
+      <button class="btn" id="load-events">${seasonList.length ? 'Refresh' : 'Load'} all ${esc(cfg.years)} events</button>
       ${list.fetchedAt && seasonList.length ? `<small>${seasonList.length} events from ${list.source === 'toa' ? 'Orange Alliance' : 'FTCScout'}, fetched ${new Date(list.fetchedAt).toLocaleDateString()}</small>` : ''}
     </div>
     ${seasonList.length ? `
@@ -202,11 +220,24 @@ function renderEvent() {
     if (!box) return;
     const ql = q.toLowerCase();
     const hits = seasonList.filter((e) => !ql || `${e.name} ${e.location} ${e.key}`.toLowerCase().includes(ql)).slice(0, 60);
-    box.innerHTML = hits.map((e) => `<button class="list-item btn-like" data-pick="${esc(e.key)}">
-      <div><b>${esc(e.name)}</b><br><small>${esc(e.start)} · ${esc(e.location)} · <code>${esc(e.key)}</code></small></div></button>`).join('') || '<p>No matches.</p>';
+    box.innerHTML = hits.map(eventRow).join('') || '<p>No matches.</p>';
   };
   showResults('');
   $('#ev-search')?.addEventListener('input', (e) => showResults(e.target.value));
+
+  $('#team-form').onsubmit = async (e) => {
+    e.preventDefault();
+    const number = parseInt($('#team-num').value, 10);
+    if (!number) { toast('Enter a team number', 'err'); return; }
+    try {
+      toast(`Finding events for ${number}…`);
+      const res = await data.fetchTeamEvents(cfg, settings, number);
+      store.saveTeamEvents({ ...res, season: cfg.key, fetchedAt: Date.now() });
+      settings = store.saveSettings({ myTeam: number });
+      toast(`${res.events.length} event${res.events.length === 1 ? '' : 's'} for ${number}${res.source === 'toa' ? ' (Orange Alliance backup)' : ''}`, res.source === 'toa' ? 'warn' : 'ok');
+      route();
+    } catch (err) { toast(err.message, 'err'); }
+  };
 
   $('#load-events').onclick = async () => {
     try {
@@ -220,7 +251,7 @@ function renderEvent() {
 
   const loadEvent = async (key) => {
     if (!key) return;
-    const name = seasonList.find((e) => e.key === key)?.name || store.getEvent(key)?.name || '';
+    const name = [...seasonList, ...(teamList?.events || [])].find((e) => e.key === key)?.name || store.getEvent(key)?.name || '';
     try {
       toast('Downloading event data…');
       const ev2 = await data.fetchEvent(key, cfg, settings, name);
@@ -759,6 +790,10 @@ function renderSettings() {
   <section class="card">
     <h2>Settings</h2>
     <label class="field wide"><span class="lbl">Scout name</span><input id="s-scout" value="${esc(settings.scout)}"></label>
+    <label class="field wide"><span class="lbl">Season for event data</span><select id="s-season">
+      ${Object.values(SEASONS).sort((a, b) => b.key.localeCompare(a.key)).map((x) => `<option value="${x.key}" ${x.key === cfg.key ? 'selected' : ''}>${esc(x.name)} ${esc(x.years)}${x.testOnly ? ' (testing)' : ''}</option>`).join('')}
+    </select></label>
+    ${cfg.testOnly ? `<p class="warn-text"><small>Testing mode: events, teams and schedules come from ${esc(cfg.name)} ${esc(cfg.years)}, but the scouting forms are still BIOBUZZ. Switch back before competition.</small></p>` : ''}
     <label class="field wide"><span class="lbl">The Orange Alliance API key (optional)</span><input id="s-key" value="${esc(settings.toaKey)}" autocomplete="off" spellcheck="false"></label>
     <p><small>Get a free key from your account page on <a href="https://theorangealliance.org" target="_blank" rel="noopener">theorangealliance.org</a>. It is stored only on this device.
       You usually don't need one: event data comes from FTCScout, and the Orange Alliance backup is published by the team's GitHub Action from the <code>TOA_API_KEY</code> repository secret. A key here just enables live Orange Alliance requests from this device.</small></p>
@@ -774,8 +809,12 @@ function renderSettings() {
     <button class="btn danger" id="s-clear">Delete all scouting data on this device</button>
   </section>`;
   $('#s-save').onclick = () => {
-    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim() });
-    toast('Settings saved', 'ok');
+    const seasonKey = $('#s-season').value;
+    const changed = seasonKey !== settings.season;
+    settings = store.saveSettings({ scout: $('#s-scout').value.trim(), toaKey: $('#s-key').value.trim(), season: seasonKey });
+    cfg = season(settings.season);
+    toast(changed ? `Season set to ${cfg.name} ${cfg.years}` : 'Settings saved', 'ok');
+    if (changed) route();
   };
   $('#s-clear').onclick = () => {
     if (confirm('Delete ALL match, pit and pick list data on this device? Export a backup first if unsure.')) {

@@ -52,6 +52,30 @@ export async function fetchSeasonEvents(seasonKey, key) {
     .sort((a, b) => (a.start || '').localeCompare(b.start || '') || a.name.localeCompare(b.name));
 }
 
+// Events a team is registered for this season, plus the team's name.
+export async function fetchTeamEvents(seasonKey, number, key) {
+  const [team, parts] = await Promise.all([
+    get(`/team/${number}`, key).catch(() => []),
+    get(`/team/${number}/events/${encodeURIComponent(seasonKey)}`, key),
+  ]);
+  const t = Array.isArray(team) ? team[0] : team;
+  const events = await Promise.all((parts || []).map(async (p) => {
+    let e = p.event;
+    if (!e?.event_name) {
+      const info = await get(`/event/${encodeURIComponent(p.event_key)}`, key).catch(() => []);
+      e = Array.isArray(info) ? info[0] : info;
+    }
+    return {
+      key: p.event_key,
+      name: e?.event_name || p.event_key,
+      location: e ? [e.city, e.state_prov, e.country].filter(Boolean).join(', ') : '',
+      start: (e?.start_date || '').slice(0, 10),
+      source: 'toa',
+    };
+  }));
+  return { team: { number, name: t?.team_name_short || t?.team_name_long || '' }, events };
+}
+
 export async function fetchEvent(eventKey, key) {
   const k = encodeURIComponent(eventKey);
   const [info, teams, matches, rankings] = await Promise.all([

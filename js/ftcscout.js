@@ -139,3 +139,45 @@ export async function fetchEvent(key) {
     source: 'ftcscout',
   };
 }
+
+const toListItem = (seasonYear, code, e) => ({
+  key: eventKey(seasonYear, code),
+  code,
+  name: e?.name || code,
+  location: e ? place(e) : '',
+  start: String(e?.start || '').slice(0, 10),
+  source: 'ftcscout',
+});
+
+// Events a team is registered for this season, plus the team's name.
+// GraphQL returns everything in one request; REST is the fallback.
+export async function fetchTeamEvents(seasonYear, number) {
+  try {
+    const query = `query($n:Int!,$s:Int!){teamByNumber(number:$n){number name events(season:$s){eventCode event{name start city stateProv country}}}}`;
+    const res = await fetch(GRAPHQL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query, variables: { n: number, s: seasonYear } }),
+    });
+    if (!res.ok) throw new Error(`FTCScout GraphQL ${res.status}`);
+    const body = await res.json();
+    if (body.errors?.length) throw new Error(body.errors[0].message);
+    const t = body.data?.teamByNumber;
+    if (!t) throw Object.assign(new Error(`FTCScout has no team ${number}`), { notFound: true });
+    return {
+      team: { number, name: t.name || '' },
+      events: (t.events || []).map((p) => toListItem(seasonYear, p.eventCode, p.event)),
+    };
+  } catch (err) {
+    if (err.notFound) throw err;
+  }
+  const team = await get(`/teams/${number}`).catch((e) => {
+    throw e.notFound ? Object.assign(new Error(`FTCScout has no team ${number}`), { notFound: true }) : e;
+  });
+  const parts = await get(`/teams/${number}/events/${seasonYear}`).catch(() => []);
+  const events = await Promise.all(parts.map(async (p) => {
+    const info = await get(`/events/${seasonYear}/${encodeURIComponent(p.eventCode)}`).catch(() => null);
+    return toListItem(seasonYear, p.eventCode, info);
+  }));
+  return { team: { number, name: team?.name || '' }, events };
+}
