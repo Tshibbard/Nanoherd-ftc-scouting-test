@@ -1,0 +1,6586 @@
+{
+ "season": "2627",
+ "fetchedAt": 1791852796504,
+ "events": [
+  {
+   "key": "2627-UT-SAS1",
+   "name": "Robot in 7 Days Scrimmage",
+   "location": "Sandy, UT, USA",
+   "start": "2026-09-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KAZ-ASN1",
+   "name": "AI & Digital Bridge Cup",
+   "location": "Astana, AST, Kazakhstan",
+   "start": "2026-09-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OCN",
+   "name": "DiscoverFest Scrimmage",
+   "location": "Oklahoma City, OK, USA",
+   "start": "2026-09-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-SAS",
+   "name": "Saline Preview Event",
+   "location": "Saline, MI, USA",
+   "start": "2026-10-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CEN1",
+   "name": "Dayton Area Scrimmage #1",
+   "location": "Centerville, OH, USA",
+   "start": "2026-10-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LUN1",
+   "name": "Lubbock - A Scrimmage",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-10-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-JAS",
+   "name": "Northeast Florida Scrimmage",
+   "location": "Jacksonville, FL, USA",
+   "start": "2026-10-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-RAN",
+   "name": "Season Startup - Northern",
+   "location": "Randolph, NJ, USA",
+   "start": "2026-10-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LUN",
+   "name": "W&P Lubbock - A Scrimmage",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-10-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-CCN",
+   "name": "CTX Corpus Christi Training Event",
+   "location": "Corpus Christi, TX, USA",
+   "start": "2026-10-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MA-DEN",
+   "name": "MA Robot in 3 Weeks Scrimmage",
+   "location": "Deerfield, MA, USA",
+   "start": "2026-10-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SON",
+   "name": "Season Startup - Central",
+   "location": "Somerset, NJ, USA",
+   "start": "2026-10-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CON",
+   "name": "Central Ohio League Scrimmage",
+   "location": "Columbus, OH, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-BRN",
+   "name": "FUN League Scrimmage",
+   "location": "Boca Raton, FL, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-CSN",
+   "name": "KCMT Scrimmage",
+   "location": "Colorado Springs, CO, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LUN3",
+   "name": "Lubbock - B Scrimmage",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MAN",
+   "name": "Mille Lacs League Week 0",
+   "location": "Mayer, MN, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-RES",
+   "name": "Northern Tinker & Play Scrimmage",
+   "location": "Reno, NV, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-LVS",
+   "name": "Southern Tinker & Play Scrimmage",
+   "location": "Las Vegas, NV, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-GLN",
+   "name": "Startup/Practice Day - Southern",
+   "location": "Glassboro, NJ, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LUN2",
+   "name": "W&P Lubbock - B Scrimmage",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-10-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAN",
+   "name": "CTX Waco Scrimmage",
+   "location": "Waco, TX, USA",
+   "start": "2026-10-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SPN",
+   "name": "Gulf Coast Scrimmage/Build Day",
+   "location": "St. Petersburg, FL, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MIN1",
+   "name": "Midland Scrimmage",
+   "location": "Midland, TX, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-BYN",
+   "name": "Pepin League Week 0",
+   "location": "Byron, MN, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-MSS",
+   "name": "Pikes Peak Scrimmage",
+   "location": "Manitou Springs, CO, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-RAN2",
+   "name": "Practice Day - Northern",
+   "location": "Hackensack, NJ, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WA-BON1",
+   "name": "Rookie Rumble",
+   "location": "Bothell, WA, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FLN",
+   "name": "South Florida Scrimmage",
+   "location": "Fort Lauderdale, FL, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MIN",
+   "name": "W&P Midland Scrimmage",
+   "location": "Midland, TX, USA",
+   "start": "2026-10-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-HPN",
+   "name": "Practice Day - Central",
+   "location": "Highland Park, NJ, USA",
+   "start": "2026-10-18",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMN1",
+   "name": "Amarillo Scrimmage",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-10-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMN",
+   "name": "W&P Amarillo Scrimmage",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-10-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CLN",
+   "name": "CSU & CMSD Scrimmage",
+   "location": "Cleveland, OH, USA",
+   "start": "2026-10-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-REQ",
+   "name": "Festival Regional SESI de Robótica - Pernambuco",
+   "location": "Recife, PE, Brazil",
+   "start": "2026-10-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ACM1",
+   "name": "AeroCoast League Meet #1",
+   "location": "Panama City, FL, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AL-ATQ",
+   "name": "Athens Qualifier",
+   "location": "Athens, AL, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AUN1",
+   "name": "Austin Volunteer Rodeo and Scrimmage",
+   "location": "Austin, TX, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-COHM1",
+   "name": "Central Ohio League Meet #1",
+   "location": "Columbus, OH, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLM1",
+   "name": "Columbus - Muscogee Meet #1",
+   "location": "Columbus, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-CONEM1",
+   "name": "Coneflower Sgt Bluff",
+   "location": "Sergeant Bluff, IA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CON",
+   "name": "Cottonwood Scrimmage",
+   "location": "Cottonwood, MN, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKDVM1",
+   "name": "DaVinci League Meet #1",
+   "location": "TBD, OK, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CEN2",
+   "name": "Dayton Area Scrimmage #2",
+   "location": "Centerville, OH, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-DM1",
+   "name": "Douglasville - DCHS Meet #1",
+   "location": "Douglasville, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-LAS",
+   "name": "Gold Crown Field House Scrimmage",
+   "location": "Lakewood, CO, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHFM1",
+   "name": "Hadfield League Meet #1",
+   "location": "OKC, OK, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM1",
+   "name": "Hawaii League #1 @ 'Iolani School",
+   "location": "Honolulu, HI, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHGM1",
+   "name": "Herrington League Meet #1",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MACM1",
+   "name": "Macon - FPDS Meet #1",
+   "location": "Macon, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MWM1",
+   "name": "Marietta - Wheeler Meet #1",
+   "location": "Marietta, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKMAM1",
+   "name": "May League Meet #1",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-VIN1",
+   "name": "Mount Douglas October Scrimmage",
+   "location": "Victoria, BC, Canada",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM1",
+   "name": "Nerds of Steel League Meet #1",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM2",
+   "name": "Nerds of Steel League Meet #2",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NM1",
+   "name": "North Georgia Meet #1",
+   "location": "Gainesville, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-NEM1",
+   "name": "Northeast Florida Meet #1",
+   "location": "Jacksonville, FL, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM1",
+   "name": "P1-1 Southern League Meet",
+   "location": "Holmdel, NJ, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-EDQ",
+   "name": "Qualifier #1",
+   "location": "Edinburg, TX, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-AMN",
+   "name": "Ramp Riot Scrimmage",
+   "location": "Ambler, PA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-PON",
+   "name": "Rose City Scrimmage",
+   "location": "Portland, OR, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-LON",
+   "name": "Row - bot Rumble Scrimmage by Up - A-Creek Robotics",
+   "location": "Longmount, CO, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-HIN",
+   "name": "Silicon Forest League Scrimmage",
+   "location": "Hillsboro, OR, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-RON",
+   "name": "SOAR Scrimmage",
+   "location": "Roseburg, OR, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-COS1",
+   "name": "SoCal - B - Scrimmage 0",
+   "location": "Compton, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS2",
+   "name": "SoCal - C1 - Scrimmage 0",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS1",
+   "name": "SoCal - C2 - Scrimmage 0",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS2",
+   "name": "SoCal - F1 - Scrimmage 0",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS1",
+   "name": "SoCal - F2 - Scrimmage 0",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CAS1",
+   "name": "SoCal - G - Scrimmage 0",
+   "location": "Carson, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-ESS1",
+   "name": "SoCal - H - Scrimmage 0",
+   "location": "El Segundo, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS2",
+   "name": "SoCal - P - Scrimmage 0",
+   "location": "Lancaster, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-OJS1",
+   "name": "SoCal - V - Scrimmage 0",
+   "location": "Ojai, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS1",
+   "name": "SoCal - W - Scrimmage 0",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-SOS",
+   "name": "Solon Scrimmage",
+   "location": "Solon, IA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FMN",
+   "name": "Southwest Scrimmage",
+   "location": "Fort Myers, FL, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-TM1",
+   "name": "Thomas County Meet #1",
+   "location": "Thomasville, GA, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-PHN",
+   "name": "Willamette Valley League Scrimmage",
+   "location": "Philomath, OR, USA",
+   "start": "2026-10-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MA-WEN",
+   "name": "Bolts, Boos, and Bots Scrimmage",
+   "location": "Westford, MA, USA",
+   "start": "2026-10-25",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM1",
+   "name": "P1-2 Northeast League Meet",
+   "location": "Cliffside Park, NJ, USA",
+   "start": "2026-10-25",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SOS1",
+   "name": "SoCal - D - Scrimmage 0",
+   "location": "Sherman Oaks, CA, USA",
+   "start": "2026-10-25",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CHN",
+   "name": "Cass Lake League Week 0",
+   "location": "Columbia Heights, MN, USA",
+   "start": "2026-10-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAM1",
+   "name": "CTX HoT League Meet #1",
+   "location": "Waco, TX, USA",
+   "start": "2026-10-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-FRQ",
+   "name": "Freeland Qualifier",
+   "location": "Freeland, MI, USA",
+   "start": "2026-10-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMM1",
+   "name": "Amarillo League Meet #1",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-ATLM1",
+   "name": "Atlanta - Marist Meet #1",
+   "location": "Atlanta, GA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKCRM1",
+   "name": "Carver League Meet #1",
+   "location": "Yukon, OK, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM6",
+   "name": "Central Meet #1 - East Peoria",
+   "location": "East Peoria, IL, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-NON",
+   "name": "Daisy Norwalk",
+   "location": "Norwalk, IA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM7",
+   "name": "Driftless League Meet - Seneca",
+   "location": "Seneca, WI, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM2",
+   "name": "Hawaii League #2 @ Island School",
+   "location": "Lihue, HI, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM2",
+   "name": "Iris Ames",
+   "location": "Ames, IA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-WIN",
+   "name": "Iron Mountain Scrimmage",
+   "location": "Wilsonville, OR, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UKR-KYN1",
+   "name": "Kyiv Scrimmage 1",
+   "location": "Kyiv, 30, Ukraine",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MLM1",
+   "name": "Mille Lacs League Meet #1",
+   "location": "Apple Valley, MN, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-NNM1",
+   "name": "Northern League Meet # 1N",
+   "location": "Reno, NV, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM1",
+   "name": "Northern Meet #1 - Deerfield",
+   "location": "Deerfield, IL, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-PDM1",
+   "name": "Paulding - Dallas Meet #1",
+   "location": "Dallas, GA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-PPM1",
+   "name": "Pepin League Meet #1",
+   "location": "Byron, MN, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS3",
+   "name": "SoCal - A - Scrimmage 0",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CLS1",
+   "name": "SoCal - E - Scrimmage 0",
+   "location": "Claremont, CA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS3",
+   "name": "SoCal - O - Scrimmage 0",
+   "location": "Mission Viejo, CA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-WHS1",
+   "name": "SoCal - S - Scrimmage 0",
+   "location": "West Hills, CA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM1",
+   "name": "Southern League Meet # 1S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM2",
+   "name": "Southern League Meet # 2S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-CFN",
+   "name": "Spooktacular Scrimmage at College Square",
+   "location": "Cedar Falls, IA, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-EUN",
+   "name": "Three Sisters League Scrimmage",
+   "location": "Eugene, OR, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAMM1",
+   "name": "W&P Amarillo League Meet #1",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NH-WIN",
+   "name": "Windham Scrimmage",
+   "location": "Windham, NH, USA",
+   "start": "2026-10-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NCAL-SJS",
+   "name": "NorCal Screamage",
+   "location": "San Jose, CA, USA",
+   "start": "2026-11-01",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM1",
+   "name": "P1-4 Northern League Meet",
+   "location": "Westfield, NJ, USA",
+   "start": "2026-11-01",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-EASTM3",
+   "name": "Craft Academy Meet at MSU",
+   "location": "Morehead, KY, USA",
+   "start": "2026-11-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-EASTM1",
+   "name": "Morehead State University Meet",
+   "location": "Morehead, KY, USA",
+   "start": "2026-11-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-BEQ",
+   "name": "Belding Qualifier",
+   "location": "Belding, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-MIQ1",
+   "name": "Bullock Creek Qualifier",
+   "location": "Midland, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-COQ",
+   "name": "Coloma Qualifier",
+   "location": "Coloma, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-HOQ",
+   "name": "Hartland Qualifier",
+   "location": "Howell, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CENTM2",
+   "name": "NKU CINSAM League Meet",
+   "location": "Highland Heights, KY, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-ROQ",
+   "name": "Royal Oak Qualifier",
+   "location": "Royal Oak, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-SOQ",
+   "name": "Southgate Qualifier",
+   "location": "Southgate, MI, USA",
+   "start": "2026-11-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ACM2",
+   "name": "AeroCoast League Meet #2",
+   "location": "Tallahassee , FL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NH-NAN",
+   "name": "ASD Scrimmage",
+   "location": "Nashua, NH, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-CEN",
+   "name": "Autumn OWLgorithm Scrimmage",
+   "location": "Centennial, CO, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BEM1",
+   "name": "Bear Meet #1",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMM1",
+   "name": "Belton Meet @ 1 PM",
+   "location": "Belton, MO, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCWM1",
+   "name": "Belton Meet @ 10:30 AM",
+   "location": "Belton, MO, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMM2",
+   "name": "Belton Meet @ 8 AM",
+   "location": "Belton, MO, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-BRQ1",
+   "name": "Brisbane South Qualifier",
+   "location": "Brisbane, QLD, Australia",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM1",
+   "name": "Central Meet #1 - Orion",
+   "location": "Orion, IL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM1",
+   "name": "Collegiate Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLM2",
+   "name": "Columbus - Muscogee Meet #2",
+   "location": "Columbus, GA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLM3",
+   "name": "Columbus - Muscogee Meet #3",
+   "location": "Columbus, GA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GDM1",
+   "name": "CTX GEMS Diamond League Meet #1",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GEM1",
+   "name": "CTX GEMS Emerald League Meet #1",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GCM1",
+   "name": "CTX Gulf Coast League Meet #1",
+   "location": "Corpus Christi, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-UCM1",
+   "name": "CTX NERD League Meet #1",
+   "location": "Universal City, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAIM1",
+   "name": "Daisy Martensdale",
+   "location": "Martensdale, IA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHFM2",
+   "name": "Hadfield League Meet #2",
+   "location": "Mid-Del, OK, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM3",
+   "name": "Hawaii League #3 @ Kalani High School",
+   "location": "Honolulu, HI, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-FLQ",
+   "name": "High Country - Flagstaff Qualifier",
+   "location": "Flagstaff, AZ, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM3",
+   "name": "Iris Manson",
+   "location": "Manson, IA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-KM1",
+   "name": "Kennedy Meet #1",
+   "location": "Palacios, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LM1",
+   "name": "Langley Meet #1",
+   "location": "Houston, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-KSN",
+   "name": "Longhorn Roundup Scrimmage",
+   "location": "Kennett Square, PA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LBM1",
+   "name": "Lubbock - B League Meet #1",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKMAM2",
+   "name": "May League Meet #2",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-MOM1",
+   "name": "Moose Meet #1",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-NAM1",
+   "name": "Neil Armstrong Meet #1",
+   "location": "The Woodlands, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-SON",
+   "name": "NEOH League Scrimmage",
+   "location": "Solon, OH, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NE-NON",
+   "name": "Norfolk Scrimmage",
+   "location": "Norfolk, NE, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM7",
+   "name": "Northern Meet #1 - Barrington",
+   "location": "Barrington, IL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM2",
+   "name": "Northern Meet #1 - Lake Forest",
+   "location": "Lake Forest, IL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM5",
+   "name": "Northern Meet #1 - Rockford",
+   "location": "Rockford, IL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-OPQ1",
+   "name": "NYC Qualifier 1",
+   "location": "Ozone Park, NY, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM2",
+   "name": "P1-5 AM Northeast League Meet",
+   "location": "Ramsey, NJ, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM3",
+   "name": "P1-5 PM Northeast League Meet",
+   "location": "Ramsey, NJ, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-GLQ1",
+   "name": "Quail - Glendale Qualifier #1",
+   "location": "Glendale, AZ, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MIQ1",
+   "name": "Qualifier #2",
+   "location": "Mission, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ROM1",
+   "name": "ROBOT League Meet #1",
+   "location": "Lakeland, FL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CLS2",
+   "name": "SoCal - E - Scrimmage 1",
+   "location": "Claremont, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS4",
+   "name": "SoCal - F1 - Scrimmage 1",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS5",
+   "name": "SoCal - F2 - Scrimmage 1",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CAS2",
+   "name": "SoCal - G - Scrimmage 1",
+   "location": "Carson, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-ESS2",
+   "name": "SoCal - H - Scrimmage 1",
+   "location": "El Segundo, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS4",
+   "name": "SoCal - P - Scrimmage 1",
+   "location": "Lancaster, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-OJS2",
+   "name": "SoCal - V - Scrimmage 1",
+   "location": "Ojai, CA, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SFM1",
+   "name": "South Florida Meet #1",
+   "location": "Fort Lauderedale, FL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SSM1",
+   "name": "South Suburbs Meet #1",
+   "location": "Bradley, IL, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-TBQ",
+   "name": "Victoria Qualifier",
+   "location": "Caufield East, VIC, Australia",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLBM1",
+   "name": "W&P Lubbock - B League Meet #1",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-WESTM1",
+   "name": "WKU Ogden College Meet",
+   "location": "Bowling Green,, KY, USA",
+   "start": "2026-11-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-OPQ2",
+   "name": "NYC Qualifier 2",
+   "location": "Ozone Park, NY, USA",
+   "start": "2026-11-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM2",
+   "name": "P1-6 Southern League Meet",
+   "location": "Egg Harbor Twp, NJ, USA",
+   "start": "2026-11-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-PAQ",
+   "name": "Festival Regional SESI de Robótica - Rio Grande do Sul",
+   "location": "Porto Alegre, RS, Brazil",
+   "start": "2026-11-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-GOQ",
+   "name": "Seletiva Regional - Goiás",
+   "location": "Goiânia, GO, Brazil",
+   "start": "2026-11-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-PIQ",
+   "name": "Torneio Regional SESI de Robótica - Paraná",
+   "location": "Pinhais, PR, Brazil",
+   "start": "2026-11-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-BIQ",
+   "name": "Biloxi Qualifier",
+   "location": "Biloxi, MS, USA",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-CHQ",
+   "name": "Chelsea Qualifier",
+   "location": "Chelsea, MI, USA",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-KEQ",
+   "name": "Kentwood Qualifier",
+   "location": "Kentwood, MI, USA",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-OTQ",
+   "name": "Lake Orion Qualifier",
+   "location": "Orion Township, MI, USA",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-RHQ",
+   "name": "Rochester Qualifier",
+   "location": "Rochester Hills, MI, USA",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-NWQ",
+   "name": "Wollongong Qualifier",
+   "location": "North Wollongong, NSW, Australia",
+   "start": "2026-11-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-ATLM2",
+   "name": "Atlanta - Marist Meet #2",
+   "location": "Atlanta, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM7",
+   "name": "Battle Meet @ 10 AM",
+   "location": "Columbia, MO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-BRQ2",
+   "name": "Brisbane North Qualifier",
+   "location": "Brisbane, QLD, Australia",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM1",
+   "name": "Camdenton Meet #1 @ 10 AM",
+   "location": "Camdenton, MO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKCRM2",
+   "name": "Carver League Meet #2",
+   "location": "Mustang, OK, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM7",
+   "name": "Central Meet #1 - Urbana",
+   "location": "Urbana, IL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-COHM2",
+   "name": "Central Ohio League Meet #2",
+   "location": "Columbus, OH, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CCM1",
+   "name": "Chicago Meet #1 - Northside",
+   "location": "Chicago, IL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-SHQ1",
+   "name": "China Shanghai #1 Qualifier",
+   "location": "Shanghai, SH, China",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-CYM1",
+   "name": "Coyote Meet #1",
+   "location": "Red Deer, AB, Canada",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GDM2",
+   "name": "CTX GEMS Diamond League Meet #2",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GEM2",
+   "name": "CTX GEMS Emerald League Meet #2",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-HLM1",
+   "name": "CTX HSI Lobos League Meet #1",
+   "location": "San Antonio, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XAM1",
+   "name": "CTX X - Stream A League Meet #1",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XBM1",
+   "name": "CTX X - Stream B League Meet #1",
+   "location": "Austin, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKDVM2",
+   "name": "DaVinci League Meet #2",
+   "location": "TBD, OK, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-DM2",
+   "name": "Douglasville - DCHS Meet #2",
+   "location": "Douglasville, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-EPM1",
+   "name": "El Paso League Meet #1",
+   "location": "El Paso, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-SCN",
+   "name": "Fall Fiesta Scrimmage",
+   "location": "Scarborough, ON, Canada",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-FSM1",
+   "name": "Fox Valley South Meet #1",
+   "location": "West Chicago, IL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FNM1",
+   "name": "FUN League Meet #1",
+   "location": "Jupiter, FL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM6",
+   "name": "Gateway STEM Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-GCM1",
+   "name": "Gulf Coast Meet #1",
+   "location": "Seminole, FL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM4",
+   "name": "Hawaii League #4 @ Punahou School",
+   "location": "Honolulu, HI, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AL-ORQ",
+   "name": "HCMS Qualifier",
+   "location": "Owens Cross Roads, AL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHGM2",
+   "name": "Herrington League Meet #2",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM4",
+   "name": "Iris Parkersburg",
+   "location": "Parkersburg, IA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-IRM1",
+   "name": "Iron Mountain League Meet #1",
+   "location": "Wilsonville, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SEM2",
+   "name": "Jackson Meet @ 10 AM",
+   "location": "Jackson, MO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-BCQ",
+   "name": "Lakeview Qualifier",
+   "location": "Battle Creek, MI, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LAM1",
+   "name": "Lubbock - A League Meet #1",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MWM2",
+   "name": "Marietta - Wheeler Meet #2",
+   "location": "Marietta, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MM1",
+   "name": "Marshall Meet #1",
+   "location": "Pearland, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MDM1",
+   "name": "Midland League Meet #1",
+   "location": "Odessa, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MLM2",
+   "name": "Mille Lacs League Meet #2",
+   "location": "Victoria, MN, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-NEOHM1",
+   "name": "NEOH League Meet #1",
+   "location": "Gates Mills, OH, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM3",
+   "name": "Nerds of Steel League Meet #3",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM4",
+   "name": "Nerds of Steel League Meet #4",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NM2",
+   "name": "North Georgia Meet #2",
+   "location": "Commerce, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-WIS",
+   "name": "Northen Scrimmage",
+   "location": "Windsor, CO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-ODM1",
+   "name": "Odessa League Meet #1",
+   "location": "Andrews, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORM1",
+   "name": "Orlando Robotics Meet #1",
+   "location": "Winter Park, FL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM4",
+   "name": "P2-1 Northeast League Meet",
+   "location": "Dumont, NJ, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-PDM2",
+   "name": "Paulding - Dallas Meet #2",
+   "location": "Dallas, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-PDM3",
+   "name": "Paulding - Dallas Meet #3",
+   "location": "Dallas, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWM7",
+   "name": "Piper Meet @ 1 PM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCMM6",
+   "name": "Piper Meet @ 10:30 AM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWM6",
+   "name": "Piper Meet @ 8 AM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-GIQ",
+   "name": "Roadrunner - Gilbert Qualifier",
+   "location": "Gilbert, AZ, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ROM2",
+   "name": "ROBOT League Meet #2",
+   "location": "Tampa, FL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM1",
+   "name": "Rolla Meet @ 10 AM",
+   "location": "Rolla, MO, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-RCM1",
+   "name": "Rose City League Meet #1",
+   "location": "Portland, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DEU-STN",
+   "name": "Scrimmage Stuttgart",
+   "location": "Stuttgart, BW, Germany",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SFM1",
+   "name": "Silicon Forest League Meet #1",
+   "location": "Hillsboro, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SOM1",
+   "name": "SOAR League Meet #1",
+   "location": "Roseburg, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS5",
+   "name": "SoCal - A - Scrimmage 1",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-COS2",
+   "name": "SoCal - B - Scrimmage 1",
+   "location": "Compton, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS3",
+   "name": "SoCal - C1 - Scrimmage 1",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS4",
+   "name": "SoCal - C2 - Scrimmage 1",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS6",
+   "name": "SoCal - O - Scrimmage 1",
+   "location": "Mission Viejo, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CAS3",
+   "name": "SoCal - S - Scrimmage 1",
+   "location": "Calabasas, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS6",
+   "name": "SoCal - W - Scrimmage 1",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-WAQ",
+   "name": "South Australia Qualifier",
+   "location": "Wayville, SA, Australia",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SCM1",
+   "name": "Space Coast Meet #1",
+   "location": "Oviedo, FL, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-TM2",
+   "name": "Thomas County Meet #2",
+   "location": "Thomasville, GA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-TSM1",
+   "name": "Three Sisters League Meet #1",
+   "location": "Eugene, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CENTM3",
+   "name": "UK League Meet",
+   "location": "Lexington, KY, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WEPM1",
+   "name": "W&P El Paso League Meet #1",
+   "location": "El Paso, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLAM1",
+   "name": "W&P Lubbock - A League Meet #1",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WMDM1",
+   "name": "W&P Midland League Meet #1",
+   "location": "Odessa, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WODM1",
+   "name": "W&P Odessa League Meet #1",
+   "location": "Andrews, TX, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-MVM1",
+   "name": "Willamette Valley League Meet #1",
+   "location": "Philomath, OR, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-WINBM1",
+   "name": "Winterberry Waverly",
+   "location": "Waverly, IA, USA",
+   "start": "2026-11-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-SHQ2",
+   "name": "China Shanghai #2 Qualifier",
+   "location": "Shanghai, SH, China",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-STN",
+   "name": "Husky Scrimmage",
+   "location": "Storrs, CT, USA",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-LON",
+   "name": "Loveland Scrimmage",
+   "location": "Loveland, OH, USA",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM3",
+   "name": "P2-2 Southern League Meet",
+   "location": "Williamstown, NJ, USA",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-PPM2",
+   "name": "Pepin League Meet #2",
+   "location": "Owatonna, MN, USA",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-WAQ2",
+   "name": "Sydney North Wahroonga Qualifier",
+   "location": "Wahroonga, NSW, Australia",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-PEQ",
+   "name": "Western Australia Qualifier",
+   "location": "Perth, WA, Australia",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MA-BEN",
+   "name": "Wolfpack Scrimmage",
+   "location": "Beverly, MA, USA",
+   "start": "2026-11-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CLM1",
+   "name": "Cass Lake League Meet #1",
+   "location": "Columbia Heights, MN, USA",
+   "start": "2026-11-18",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-EASTM2",
+   "name": "CLCKY Hazard @ HCTC Meet",
+   "location": "Hazard, KY, USA",
+   "start": "2026-11-18",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAM2",
+   "name": "CTX HoT League Meet #2",
+   "location": "Waco, TX, USA",
+   "start": "2026-11-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-CGQ",
+   "name": "Seletiva Regional - SESI Mato Grosso do Sul",
+   "location": "Campo Grande, MS, Brazil",
+   "start": "2026-11-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BVM1",
+   "name": "Beaver Meet #1",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-TEQ",
+   "name": "Bedford Qualifier",
+   "location": "Temperance, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-FRQ2",
+   "name": "Fruitport Qualifier",
+   "location": "Fruitport, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-HOQ2",
+   "name": "Houghton (UP) Qualifier",
+   "location": "Houghton, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-MHQ",
+   "name": "Madison Hts Qualifier",
+   "location": "Madison Hts, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-MIQ2",
+   "name": "Midland Qualifier",
+   "location": "Midland, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MT-BUQ",
+   "name": "Montana Qualifier - Butte MT - Tech",
+   "location": "Butte, MT, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-NOQ",
+   "name": "Novi Qualifier",
+   "location": "Novi, MI, USA",
+   "start": "2026-11-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-ATLM3",
+   "name": "Atlanta - Marist Meet #3",
+   "location": "Atlanta, GA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AR-BEQ",
+   "name": "Bentonville Bash",
+   "location": "Bentonville, AR, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BIM1",
+   "name": "Bison Meet #1",
+   "location": "Edmonton, AB, Canada",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAIM2",
+   "name": "Daisy Newton",
+   "location": "Newton, IA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CEN3",
+   "name": "Dayton Area Scrimmage #3",
+   "location": "Centerville, OH, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM1",
+   "name": "Francis Howell North Meet #1 @ 8 AM",
+   "location": "St. Charles, MO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM2",
+   "name": "Hillcrest Meet @10 AM",
+   "location": "Springfield, MO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-RI-NKS",
+   "name": "Holiday Battle Scrimmage",
+   "location": "North Kingstown, RI, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-JM1",
+   "name": "Johnson Meet #1",
+   "location": "Houston, TX, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM2",
+   "name": "Lafayette Meet @1 PM",
+   "location": "Wildwood, MO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM3",
+   "name": "Lafayette Meet @8 AM",
+   "location": "Wildwood, MO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-NCN",
+   "name": "Lowcountry Scrimmage",
+   "location": "North Charleston, SC, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-MILKM1",
+   "name": "Milkweed Dubuque #1",
+   "location": "Dubuque, IA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-MIQ",
+   "name": "Mississauga Qualifier",
+   "location": "Mississauga, ON, Canada",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-NEOHM2",
+   "name": "NEOH League Meet #2",
+   "location": "Chagrin Falls, OH, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-NYQ",
+   "name": "North York Qualifier",
+   "location": "North York, ON, Canada",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-NEM2",
+   "name": "Northeast Florida Meet #2",
+   "location": "Jacksonville, FL, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM3",
+   "name": "P2-3 Northern League Meet",
+   "location": "Parsippany, NJ, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-SAQ1",
+   "name": "Prior Lake Saturday",
+   "location": "Savage, MN, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-RSM1",
+   "name": "Rattlesnake Meet #1",
+   "location": "Magrath, AB, Canada",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWM3",
+   "name": "Schlagle Meet @ 1 PM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCMM3",
+   "name": "Schlagle Meet @ 10:30 AM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWM2",
+   "name": "Schlagle Meet @ 8 AM",
+   "location": "Kansas City, KS, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDMLM1",
+   "name": "SDFTC Week 1 matches - Meet #1 Day 1",
+   "location": "San Diego, CA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDMLM2",
+   "name": "SDFTC Week 1 matches - Meet #2 Day 1",
+   "location": "San Diego, CA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-SHQ",
+   "name": "Showdown in Sheboygan",
+   "location": "Sheboygan, WI, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CAS4",
+   "name": "SoCal - G - Scrimmage 2",
+   "location": "Carson, CA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-ESS3",
+   "name": "SoCal - H - Scrimmage 2",
+   "location": "El Segundo, CA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS7",
+   "name": "SoCal - P - Scrimmage 2",
+   "location": "Lancaster, CA, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-BRQ3",
+   "name": "South Bank Qualifier",
+   "location": "Brisbane, QLD, Australia",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SEM1",
+   "name": "SouthEast Meet #1",
+   "location": "Marion, IL, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SWM1",
+   "name": "SouthWest Meet #1",
+   "location": "Marion, IL, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-PYQ",
+   "name": "Sydney North Pymble Qualifier",
+   "location": "Pymble, NSW, Australia",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-MOS",
+   "name": "The MITEE Gobble Squabble Scrimmage",
+   "location": "Monument, CO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-GJS",
+   "name": "West Slope Scrimmage",
+   "location": "Grand Junction , CO, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-CLS",
+   "name": "Winging It Scrimmage",
+   "location": "Claymont, DE, USA",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-WVM1",
+   "name": "Wolverine Meet #1",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-EKM1",
+   "name": "Elk Meet #1",
+   "location": "Edmonton, AB, Canada",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM5",
+   "name": "Hawaii League #5 @ Island School",
+   "location": "Lihue, HI, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM2",
+   "name": "P2-4 AM Central League Meet",
+   "location": "Somerset, NJ, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM3",
+   "name": "P2-4 PM Central League Meet",
+   "location": "Somerset, NJ, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-SAQ2",
+   "name": "Prior Lake Sunday",
+   "location": "Savage, MN, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDMLM4",
+   "name": "SDFTC Week 1 matches - Meet #3 Day 2",
+   "location": "San Diego, CA, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDMLM3",
+   "name": "SDFTC Week 1 matches - Meet #4 Day 2",
+   "location": "San Diego, CA, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SOS2",
+   "name": "SoCal - D - Scrimmage 1",
+   "location": "Sherman Oaks, CA, USA",
+   "start": "2026-11-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-FOQ",
+   "name": "Festival SESI de Educação Ceará",
+   "location": "Fortaleza, CE, Brazil",
+   "start": "2026-11-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-BHQ",
+   "name": "Festival SESI de Robótica - Regional Minas Gerais",
+   "location": "Belo Horizonte, MG, Brazil",
+   "start": "2026-11-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-TLQ",
+   "name": "Regional CDMX — Tec de Monterrey",
+   "location": "Tlalpan, CMX, Mexico",
+   "start": "2026-11-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-MOQ",
+   "name": "Regional Nuevo León — San Pedro",
+   "location": "Monterrey, NLE, Mexico",
+   "start": "2026-11-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BEM2",
+   "name": "Bear Meet #2",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-TOQ1",
+   "name": "Central Scarborough Qualifier",
+   "location": "Toronto, ON, Canada",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-HAQ1",
+   "name": "China Hangzhou #1 Qualifier",
+   "location": "Hangzhou, ZJ, China",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-VIN2",
+   "name": "Esquimalt November Scrimmage",
+   "location": "Victoria, BC, Canada",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHIM6",
+   "name": "Hawaii League #6 @ Mililani High School",
+   "location": "Mililani, HI, USA",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM2",
+   "name": "P1-7 Northern League Meet",
+   "location": "Berkeley Heights, NJ, USA",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-PMN",
+   "name": "Port Moody November Scrimmage",
+   "location": "Port Moody, BC, Canada",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-THQ",
+   "name": "Qualifier The Hague",
+   "location": "The Hague, ZH, Netherlands",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-SUQ",
+   "name": "Sudbury Qualifier",
+   "location": "Sudbury, ON, Canada",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-MPQ1",
+   "name": "Sydney North Macquarie Park Qualifier (Saturday)",
+   "location": "Macquarie Park, NSW, Australia",
+   "start": "2026-11-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-HAQ2",
+   "name": "China Hangzhou #2 Qualifier",
+   "location": "Hangzhou, ZJ, China",
+   "start": "2026-11-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-MOM2",
+   "name": "Moose Meet #2",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-11-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM1",
+   "name": "P1-8 Central League Meet",
+   "location": "Princeton, NJ, USA",
+   "start": "2026-11-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AUS-MPQ2",
+   "name": "Sydney North Macquarie Park Qualifier (Sunday)",
+   "location": "Macquarie Park, NSW, Australia",
+   "start": "2026-11-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CLQ",
+   "name": "CSU & CMSD Qualifier",
+   "location": "Cleveland, OH, USA",
+   "start": "2026-12-01",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM7",
+   "name": "Nerinx Meet @ 4:30 PM",
+   "location": "Webster Groves, MO, USA",
+   "start": "2026-12-01",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CLM2",
+   "name": "Cass Lake League Meet #2",
+   "location": "Columbia Heights, MN, USA",
+   "start": "2026-12-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM8",
+   "name": "Driftless League Meet - Wauzeka",
+   "location": "Wauzeka, WI, USA",
+   "start": "2026-12-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORM2A",
+   "name": "Orlando Robotics Meet #2A",
+   "location": "Orlando, FL, USA",
+   "start": "2026-12-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-RJQ",
+   "name": "Seletiva Regional - Rio de Janeiro",
+   "location": "Rio de Janeiro, RJ, Brazil",
+   "start": "2026-12-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-AAQ",
+   "name": "Ann Arbor Qualifier",
+   "location": "Ann Arbor, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-CPLT",
+   "name": "Capital League Tournament",
+   "location": "Mason, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-DEQ",
+   "name": "Detroit Qualifier",
+   "location": "Detroit, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-FLQ",
+   "name": "Flint Qualifier",
+   "location": "Flint, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-HJQ",
+   "name": "John Jay Qualifier",
+   "location": "Hopewell Junction, NY, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-WAQ",
+   "name": "Macomb Community College Qualifier",
+   "location": "Warren, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-MDLT",
+   "name": "Metro Detroit League Tournament",
+   "location": "Belleville, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-OCLT",
+   "name": "OCCRA League Tournamet",
+   "location": "Rochester Hills, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-PEQ",
+   "name": "Pellston Qualifier",
+   "location": "Pellston, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-SCLT",
+   "name": "South Central League Tournament",
+   "location": "Saline, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-TUQ",
+   "name": "Tupelo Qualifier",
+   "location": "Tupelo, MS, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-WMLT",
+   "name": "West Michigan League Tournament",
+   "location": "Grand Rapids, MI, USA",
+   "start": "2026-12-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TUR-EYQ1",
+   "name": "1. Hisar Turnuvası",
+   "location": "Eyüpsultan, 34, Türkiye",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMM2",
+   "name": "Amarillo League Meet #2",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-WIN",
+   "name": "Applied Forces Scrimmage",
+   "location": "Wilmington, DE, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-SAQ",
+   "name": "Beehive Qualifier",
+   "location": "Sandy, UT, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-EASTM4",
+   "name": "Berea College Meet",
+   "location": "Berea, KY, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MA-BON",
+   "name": "Bots 'n Tea Party Scrimmage",
+   "location": "Boston, MA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKCRM3",
+   "name": "Carver League Meet #3",
+   "location": "Mustang, OK, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM2",
+   "name": "Central Meet #2 - Orion",
+   "location": "Orion, IL, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-COHM3",
+   "name": "Central Ohio League Meet #3",
+   "location": "Columbus, OH, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLM4",
+   "name": "Columbus - Muscogee Meet #4",
+   "location": "Columbus, GA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLM5",
+   "name": "Columbus - Muscogee Meet #5",
+   "location": "Columbus, GA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-COQ",
+   "name": "Cottonwood Saturday",
+   "location": "Cottonwood, MN, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-CYM2",
+   "name": "Coyote Meet #2",
+   "location": "Lacombe, AB, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GCM2",
+   "name": "CTX Gulf Coast League Meet #2",
+   "location": "Corpus Christi, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-UCM2",
+   "name": "CTX NERD League Meet #2",
+   "location": "Universal City, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XAM2",
+   "name": "CTX X - Stream A League Meet #2",
+   "location": "Austin, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XBM2",
+   "name": "CTX X - Stream B League Meet #2",
+   "location": "Austin, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAIM3",
+   "name": "Daisy Pella",
+   "location": "Pella, IA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKDVM3",
+   "name": "DaVinci League Meet #3",
+   "location": "TBD, OK, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-EPM2",
+   "name": "El Paso League Meet #2",
+   "location": "El Paso, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-FSM2",
+   "name": "Fox Valley South Meet #2",
+   "location": "West Chicago, IL, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FNM2",
+   "name": "FUN League Meet #2",
+   "location": "Pahokee, FL, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-GIN",
+   "name": "Green and Red Scrimmage",
+   "location": "Gibsonia, PA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-GWQ",
+   "name": "Grosse Pte. Woods Qualifier",
+   "location": "Grosse Pte. Woods, MI, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHFM3",
+   "name": "Hadfield League Meet #3",
+   "location": "Okarche, OK, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHGM3",
+   "name": "Herrington League Meet #3",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM1",
+   "name": "Iris Ames",
+   "location": "Ames, IA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM2",
+   "name": "IWA Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCEM2",
+   "name": "Kearney Meet @ 1 PM",
+   "location": "Kearney, MO, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCWM4",
+   "name": "Kearney Meet @ 10:30 AM",
+   "location": "Kearney, MO, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCEM1",
+   "name": "Kearney Meet @ 8 AM",
+   "location": "Kearney, MO, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-KM2",
+   "name": "Kennedy Meet #2",
+   "location": "Palacios, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-SUQ",
+   "name": "L.A. Matheson Qualifier",
+   "location": "Surrey, BC, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LM2",
+   "name": "Langley Meet #2",
+   "location": "Houston, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM6",
+   "name": "Lebanon Meet @ 10 AM",
+   "location": "Lebanon, MO, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LAM2",
+   "name": "Lubbock - A League Meet #2",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MACM2",
+   "name": "Macon - FPDS Meet #2",
+   "location": "Macon, GA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MACM3",
+   "name": "Macon - FPDS Meet #3",
+   "location": "Macon, GA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MGQ1",
+   "name": "Maple Grove Saturday",
+   "location": "Maple Grove, MN, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MM2",
+   "name": "Marshall Meet #2",
+   "location": "Pearland, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKMAM3",
+   "name": "May League Meet #3",
+   "location": "Tulsa, OK, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-OXN",
+   "name": "Miami University Scrimmage",
+   "location": "Oxford, OH, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-KAQ",
+   "name": "Monument Valley - Kayenta Qualifier",
+   "location": "Kayenta, AZ, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-WESTM2",
+   "name": "Murray State League Meet",
+   "location": "Murray, KY, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM5",
+   "name": "Nerds of Steel League Meet #5",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLM6",
+   "name": "Nerds of Steel League Meet #6",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NL-CMP",
+   "name": "Newfoundland and Labrador Championship",
+   "location": "St. John's, NL, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-NNM2",
+   "name": "Northern League Meet # 2N",
+   "location": "Reno, NV, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM8",
+   "name": "Northern Meet #2 - Barrington",
+   "location": "Barrington, IL, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM3",
+   "name": "Northern Meet #2 - Lake Forest",
+   "location": "Lake Forest, IL, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ1",
+   "name": "NYC Qualifier 3",
+   "location": "Brooklyn, NY, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-KAQ",
+   "name": "Ottawa Qualifier",
+   "location": "Kanata, ON, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM4",
+   "name": "P2-5 Southern League Meet",
+   "location": "Manalapan, NJ, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-POQ1",
+   "name": "Powhatan Qualifier I",
+   "location": "Powhatan, VA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BEL-HAQ",
+   "name": "Qualifier Hasselt",
+   "location": "Hasselt, VLI, Belgium",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-RSM2",
+   "name": "Rattlesnake Meet #2",
+   "location": "Foothills, AB, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS8",
+   "name": "SoCal - A - Scrimmage 2",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-COS3",
+   "name": "SoCal - B - Scrimmage 2",
+   "location": "Compton, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CLS3",
+   "name": "SoCal - E - Scrimmage 2",
+   "location": "Claremont, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS9",
+   "name": "SoCal - F1 - Scrimmage 2",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS8",
+   "name": "SoCal - F2 - Scrimmage 2",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS7",
+   "name": "SoCal - O - Scrimmage 2",
+   "location": "Mission Viejo, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-RES",
+   "name": "SoCal - S - Scrimmage 2",
+   "location": "Reseda, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-OJS3",
+   "name": "SoCal - V - Scrimmage 2",
+   "location": "Ojai, CA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-YOQ1",
+   "name": "South Central Pennsylvania Qualifier",
+   "location": "York, PA, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM3",
+   "name": "Southern League Meet # 3S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM4",
+   "name": "Southern League Meet # 4S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-SCQ",
+   "name": "St. Catharines Qualifier",
+   "location": "St. Catharines, ON, Canada",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-TSM2",
+   "name": "Three Sisters League Meet #2",
+   "location": "Eugene, OR, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NBQ",
+   "name": "Thumb Wars",
+   "location": "New Berlin, WI, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-DWN",
+   "name": "Upstate Scrimmage",
+   "location": "Due West, SC, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAMM2",
+   "name": "W&P Amarillo League Meet #2",
+   "location": "Amarillo, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WEPM2",
+   "name": "W&P El Paso League Meet #2",
+   "location": "El Paso, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLAM2",
+   "name": "W&P Lubbock - A League Meet #2",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DC-WDQ",
+   "name": "Washington DC Qualifier I",
+   "location": "Washington DC, DC, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-MVM2",
+   "name": "Willamette Valley League Meet #2",
+   "location": "Philomath, OR, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-WOQ",
+   "name": "Wolcott Qualifier",
+   "location": "Wolcott, CT, USA",
+   "start": "2026-12-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TUR-EYQ2",
+   "name": "2. Hisar Turnuvası",
+   "location": "Eyüpsultan, 34, Türkiye",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-YOQ2",
+   "name": "Greyhound Sprint Qualifier",
+   "location": "York, PA, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-HON",
+   "name": "Hawaii Scrimmage",
+   "location": "Honolulu, HI, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MGQ2",
+   "name": "Maple Grove Sunday",
+   "location": "Maple Grove, MN, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-NEOHM3",
+   "name": "NEOH League Meet #3",
+   "location": "Mayfield Heights, OH, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ4",
+   "name": "NYC Qualifier 4",
+   "location": "Brooklyn, NY, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM4",
+   "name": "P2-6 Northern League Meet",
+   "location": "Scotch Plains, NJ, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-POQ2",
+   "name": "Powhatan Qualifier II",
+   "location": "Powhatan, VA, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SOS3",
+   "name": "SoCal - D - Scrimmage 2",
+   "location": "Sherman Oaks, CA, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DC-WAQ2",
+   "name": "Washington DC Qualifier II",
+   "location": "Washington, DC, USA",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-WAQ",
+   "name": "Waterloo Qualifier",
+   "location": "Waterloo, ON, Canada",
+   "start": "2026-12-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-SSQ",
+   "name": "Seletiva Regional - Santa Catarina",
+   "location": "São Bento do Sul, SC, Brazil",
+   "start": "2026-12-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORM2B",
+   "name": "Orlando Robotics Meet #2B",
+   "location": "Winter Park, FL, USA",
+   "start": "2026-12-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-CUQ",
+   "name": "Regional CDMX — Colegio Hebreo Maguen David",
+   "location": "Cuajimalpa, CMX, Mexico",
+   "start": "2026-12-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-PEN",
+   "name": "Columbia Basin League Scrimmage",
+   "location": "Pendleton, OR, USA",
+   "start": "2026-12-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAM3",
+   "name": "CTX HoT League Meet #3",
+   "location": "Waco, TX, USA",
+   "start": "2026-12-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-NWCMP",
+   "name": "Michigan - FiM Championship NW",
+   "location": "Midland, MI, USA",
+   "start": "2026-12-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORM2C",
+   "name": "Orlando Robotics Meet #2C",
+   "location": "Altamonte Springs, FL, USA",
+   "start": "2026-12-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-SAQ",
+   "name": "Seletiva Regional - Bahia",
+   "location": "Salvador, BA, Brazil",
+   "start": "2026-12-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NM-ALQ",
+   "name": "Alamogordo Qualifier",
+   "location": "Alamogordo, NM, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BVM2",
+   "name": "Beaver Meet #2",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-POQ",
+   "name": "Central Ohio Olentangy Qualifier",
+   "location": "Powell, OH, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CEQ",
+   "name": "Dayton Qualifier",
+   "location": "Centerville, OH, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FIM-SECMP",
+   "name": "Michigan - FiM Championship SE",
+   "location": "Howell, MI, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ID-MOQ",
+   "name": "North Idaho Qualifying Event",
+   "location": "Moscow, ID, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-COQ",
+   "name": "Regional Coahuila — Torreón",
+   "location": "Coahuila, COA, Mexico",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-GUQ",
+   "name": "Regional Jalisco — Guadalajara",
+   "location": "Guadalajara, JAL, Mexico",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-MOQ",
+   "name": "Scott County Qualifier",
+   "location": "Morton, MS, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ID-MEQ",
+   "name": "Treasure Valley Qualifying Event",
+   "location": "Meridian, ID, USA",
+   "start": "2026-12-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-ALQ",
+   "name": "Alexandria Qualifier",
+   "location": "Alexandria, LA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-ATLLT",
+   "name": "Atlanta - Marist League Tournament",
+   "location": "Atlanta, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BIM2",
+   "name": "Bison Meet #2",
+   "location": "Edmonton, AB, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-BOQ",
+   "name": "Bolton Qualifier",
+   "location": "Bolton, ON, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-BOQ",
+   "name": "Boulder Qualifier",
+   "location": "Boulder, CO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM3",
+   "name": "Central Meet #2 - Forsyth",
+   "location": "Forsyth, IL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM8",
+   "name": "Central Meet #2 - Varna",
+   "location": "Varna, IL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-CHQ1",
+   "name": "Charlottesville Qualifier I",
+   "location": "Charlottesville, VA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CCM2",
+   "name": "Chicago Meet #2 - Hancock",
+   "location": "Chicago, IL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-SHQ3",
+   "name": "China Shanghai #3 Qualifier",
+   "location": "Shanghai, SH, China",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GDM3",
+   "name": "CTX GEMS Diamond League Meet #3",
+   "location": "Austin, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GEM3",
+   "name": "CTX GEMS Emerald League Meet #3",
+   "location": "Austin, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-HLM2",
+   "name": "CTX HSI Lobos League Meet #2",
+   "location": "San Antonio, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-TUQ",
+   "name": "Diamondback - Tucson Qualifier",
+   "location": "Tucson, AZ, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-DM3",
+   "name": "Douglasville - DCHS Meet #3",
+   "location": "Douglasville, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-GRN",
+   "name": "East Grand Scrimmage",
+   "location": "Granby, CO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-VIQ1",
+   "name": "Esquimalt Qualifier",
+   "location": "Victoria, BC, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM5",
+   "name": "Eureka Meet @ 1 PM",
+   "location": "Eureka, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM4",
+   "name": "Eureka Meet @ 8 AM",
+   "location": "Eureka, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-GCM2",
+   "name": "Gulf Coast Meet #2",
+   "location": "Dunedin, FL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-USHILT",
+   "name": "Hawaii League Tournament",
+   "location": "Kailua, HI, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCEM3",
+   "name": "Holden Meet @ 1 PM",
+   "location": "Holden, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMM4",
+   "name": "Holden Meet @ 10:30 AM",
+   "location": "Holden, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCEM4",
+   "name": "Holden Meet @ 8 AM",
+   "location": "Holden, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM5",
+   "name": "Iris Mason City",
+   "location": "Mason City, IA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-IRM2",
+   "name": "Iron Mountain League Meet #2",
+   "location": "Wilsonville, OR, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-GBQ",
+   "name": "Jag - Wire Qualifier",
+   "location": "Green Bay, WI, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-JM2",
+   "name": "Johnson Meet #2",
+   "location": "Houston, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM3",
+   "name": "Kickapoo Meet #1 @ 10 AM",
+   "location": "Springfield, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-KIQ",
+   "name": "Kingston Qualifier",
+   "location": "Kingston, ON, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UKR-KYN2",
+   "name": "Kyiv Scrimmage 2",
+   "location": "Kyiv, 30, Ukraine",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-LAQ1",
+   "name": "Lancaster Area Qualifier",
+   "location": "Lancaster, PA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LBM2",
+   "name": "Lubbock - B League Meet #2",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-MAQ1",
+   "name": "Manassas Qualifier I",
+   "location": "Manassas, VA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MDM2",
+   "name": "Midland League Meet #2",
+   "location": "Odessa, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-CAN",
+   "name": "Midlands Scrimmage",
+   "location": "Camden, SC, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-MILKM2",
+   "name": "Milkweed Dubuque #2",
+   "location": "Dubuque, IA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MLM3",
+   "name": "Mille Lacs League Meet #3",
+   "location": "Minneapolis, MN, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AR-MHQ",
+   "name": "Mountain Home Mayhem",
+   "location": "Mountain Home, AR, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AL-HUQ",
+   "name": "NCT Qualifier",
+   "location": "Huntsville, AL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-NAM2",
+   "name": "Neil Armstrong Meet #2",
+   "location": "The Woodlands, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-NOSLLT",
+   "name": "Nerds of Steel League Tournament",
+   "location": "LaCrosse, WI, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-NBQ1",
+   "name": "New Brighton Saturday",
+   "location": "New Brighton, MN, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NM3",
+   "name": "North Georgia Meet #3",
+   "location": "Gainesville, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-NEM3",
+   "name": "Northeast Florida Meet #3",
+   "location": "Jacksonville, FL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM3",
+   "name": "Orchard Farm Meet #1 @ 8 AM",
+   "location": "St Charles, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM4",
+   "name": "P2-7 Central League Meet",
+   "location": "Piscataway Township, NJ, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-PDM4",
+   "name": "Paulding - Dallas Meet #4",
+   "location": "Dallas, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-PDM5",
+   "name": "Paulding - Dallas Meet #5",
+   "location": "Dallas, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-HAQ",
+   "name": "Qualifier #3",
+   "location": "Harlingen, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-VEQ",
+   "name": "Qualifier Veghel",
+   "location": "Veghel, NB, Netherlands",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-WAQ",
+   "name": "Quartz - Waddell Qualifier",
+   "location": "Waddell, AZ, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-CHQ1",
+   "name": "Red Rock - Microchip Qualifier #1",
+   "location": "Chandler, AZ, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ROM3",
+   "name": "ROBOT League Meet #3",
+   "location": "Lecanto, FL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SFM2",
+   "name": "Silicon Forest League Meet #2",
+   "location": "Hillsboro, OR, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SOM2",
+   "name": "SOAR League Meet #2",
+   "location": "Roseburg, OR, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CAS5",
+   "name": "SoCal - G - Scrimmage 3",
+   "location": "Carson, CA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-ESS4",
+   "name": "SoCal - H - Scrimmage 3",
+   "location": "El Segundo, CA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS9",
+   "name": "SoCal - P - Scrimmage 3",
+   "location": "Lancaster, CA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS10",
+   "name": "SoCal - W - Scrimmage 2",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SFM2",
+   "name": "South Florida Meet #2",
+   "location": "Davie, FL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SSM2",
+   "name": "South Suburbs Meet #2",
+   "location": "Palos Heights, IL, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM3",
+   "name": "South Tech Meet @ 8 AM",
+   "location": " St. Louis, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-TM3",
+   "name": "Thomas County Meet #3",
+   "location": "Bainbridge, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-TM4",
+   "name": "Thomas County Meet #4",
+   "location": "Bainbridge, GA, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CENTM1",
+   "name": "U of L Speed School Meet",
+   "location": "Louisville, KY, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLBM2",
+   "name": "W&P Lubbock - B League Meet #2",
+   "location": "Lubbock, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WMDM2",
+   "name": "W&P Midland League Meet #2",
+   "location": "Odessa, TX, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-CAN",
+   "name": "Wolf Pack Scrimmage",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-WVM2",
+   "name": "Wolverine Meet #2",
+   "location": "Calgary, AB, Canada",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SEM3",
+   "name": "Woodland Meet @ 10 AM",
+   "location": "Marble Hill, MO, USA",
+   "start": "2026-12-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-CHQ2",
+   "name": "Charlottesville Qualifier II",
+   "location": "Charlottesville, VA, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-SHQ4",
+   "name": "China Shanghai #4 Qualifier",
+   "location": "Shanghai, SH, China",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-EKM2",
+   "name": "Elk Meet #2",
+   "location": "Edmonton, AB, Canada",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-HI-CMP",
+   "name": "Hawaii Championship",
+   "location": "Kailua, HI, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-MAQ2",
+   "name": "Manassas Qualifier II",
+   "location": "Manassas, VA, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MWM3",
+   "name": "Marietta - Wheeler Meet #3",
+   "location": "Marietta, GA, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-NBQ2",
+   "name": "New Brighton Sunday",
+   "location": "New Brighton, MN, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM6",
+   "name": "P2-8 Northeast League Meet",
+   "location": "Oradell, NJ, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-PPM3",
+   "name": "Pepin League Meet #3",
+   "location": "Owatonna, MN, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-LAQ2",
+   "name": "Red Tornado Qualifier",
+   "location": "Lancaster, PA, USA",
+   "start": "2026-12-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-JUQ",
+   "name": "Seletiva Regional - São Paulo",
+   "location": "Jundiaí, SP, Brazil",
+   "start": "2026-12-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CLM3",
+   "name": "Cass Lake League Meet #3",
+   "location": "Columbia Heights, MN, USA",
+   "start": "2026-12-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-CHQ",
+   "name": "Regional Chihuahua — Chihuahua",
+   "location": "Chihuahua, CHH, Mexico",
+   "start": "2026-12-18",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-TOQ",
+   "name": "Regional Edo. Mex — Toluca",
+   "location": "Toluca, MEX, Mexico",
+   "start": "2026-12-18",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TUR-TUQ1",
+   "name": "1. Piri Reis Turnuvası",
+   "location": "Tuzla, 34, Türkiye",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NH-BEQ",
+   "name": "Bedford Qualifier",
+   "location": "Bedford, NH, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM8",
+   "name": "CBC Meet @ 1 PM",
+   "location": "St. Louis, MO, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-COHLT",
+   "name": "Central Ohio League Tournament",
+   "location": "Columbus, OH, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-CHQ1",
+   "name": "China Changsha #1 Qualifier",
+   "location": "Changsha, HN, China",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAIM4",
+   "name": "Daisy Norwalk",
+   "location": "Norwalk, IA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM4",
+   "name": "Francis Howell North Meet #2 @ 8 AM",
+   "location": "St. Charles, MO, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-MIQ",
+   "name": "Hillcrest Qualifier",
+   "location": "Midvale, UT, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISM6",
+   "name": "Iris Charles City",
+   "location": "Charles City, IA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-MILKM3",
+   "name": "Milkweed Dubuque #3",
+   "location": "Dubuque, IA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-NEOHLT",
+   "name": "NEOH League Tournament",
+   "location": "Shaker Heights, OH, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ5",
+   "name": "NYC Qualifier 5",
+   "location": "Brooklyn, NY, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-RCM2",
+   "name": "Rose City League Meet #2",
+   "location": "Portland, OR, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS11",
+   "name": "SoCal - A - Scrimmage 3",
+   "location": "Los Angeles, CA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-COS4",
+   "name": "SoCal - B - Scrimmage 3",
+   "location": "Compton, CA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS6",
+   "name": "SoCal - C1 - Scrimmage 2",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS5",
+   "name": "SoCal - C2 - Scrimmage 2",
+   "location": "La Cañada, CA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-WHS2",
+   "name": "SoCal - S - Scrimmage 3",
+   "location": "West Hills, CA, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SEM2",
+   "name": "SouthEast Meet #2",
+   "location": "Edwardsville, IL, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SWM2",
+   "name": "SouthWest Meet #2",
+   "location": "Edwardsville, IL, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SCM2",
+   "name": "Space Coast Meet #2",
+   "location": "Sanford, FL, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-WHQ",
+   "name": "University of Hartford Qualifier",
+   "location": "West Hartford, CT, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM2",
+   "name": "Webster Meet #1 @ 8 AM",
+   "location": "Webster Groves, MO, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-WHQ",
+   "name": "Whitewater RoboRage",
+   "location": "Whitewater, WI, USA",
+   "start": "2026-12-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TUR-TUQ2",
+   "name": "2. Piri Reis Turnuvası",
+   "location": "Tuzla, 34, Türkiye",
+   "start": "2026-12-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-CHQ2",
+   "name": "China Changsha #2 Qualifier",
+   "location": "Changsha, HN, China",
+   "start": "2026-12-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ6",
+   "name": "NYC Qualifier 6",
+   "location": "Brooklyn, NY, USA",
+   "start": "2026-12-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-GUQ1",
+   "name": "China Guangzhou #1 Qualifier",
+   "location": "Guangzhou, GD, China",
+   "start": "2026-12-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CHN-GUQ2",
+   "name": "China Guangzhou #2 Qualifier",
+   "location": "Guangzhou, GD, China",
+   "start": "2026-12-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-REQ",
+   "name": "Lakeshore Ignites",
+   "location": "Reedsville, WI, USA",
+   "start": "2027-01-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM5",
+   "name": "P3-1 Northeast League Meet",
+   "location": "Bayonne, NJ, USA",
+   "start": "2027-01-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS10",
+   "name": "SoCal - O - Scrimmage 3",
+   "location": "Mission Viejo, CA, USA",
+   "start": "2027-01-02",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM5",
+   "name": "P3-2 Central League Meet",
+   "location": "Basking Ridge, NJ, USA",
+   "start": "2027-01-03",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-CBM1",
+   "name": "Columbia Basin League Meet #1",
+   "location": "Pendleton, OR, USA",
+   "start": "2027-01-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-AHQ",
+   "name": "Ahmedabad Qualifier",
+   "location": "Ahmedabad , GJ, India",
+   "start": "2027-01-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-HYQ",
+   "name": "Hyderabad Qualifier",
+   "location": "Hyderabad, TG, India",
+   "start": "2027-01-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-CAQ",
+   "name": "Wolf Qualifier",
+   "location": "Calgary, AB, Canada",
+   "start": "2027-01-08",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ACM3",
+   "name": "AeroCoast League Meet #3",
+   "location": "Panama City , FL, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMM3",
+   "name": "Amarillo League Meet #3",
+   "location": "Amarillo, TX, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ND-BIQ",
+   "name": "Bismarck Qualifier",
+   "location": "Bismarck, ND, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-BUQ",
+   "name": "Burlington Qualifier",
+   "location": "Burlington, ON, Canada",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKCRM4",
+   "name": "Carver League Meet #4",
+   "location": "Mustang, OK, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM4",
+   "name": "Central Meet #3 - Fulton",
+   "location": "Fulton, IL, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM9",
+   "name": "Central Meet #3 - Peoria",
+   "location": "Peoria, IL, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-MEQ1",
+   "name": "Central Pennsylvania Qualifier",
+   "location": "Mechanicsburg, PA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-ERQ1",
+   "name": "Combined League Saturday",
+   "location": "Elk River, MN, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-UCM3",
+   "name": "CTX NERD League Meet #3",
+   "location": "Universal City, TX, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XAM3",
+   "name": "CTX X - Stream A League Meet #3",
+   "location": "Austin, TX, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XBM3",
+   "name": "CTX X - Stream B League Meet #3",
+   "location": "Austin, TX, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAIM5",
+   "name": "Daisy West Des Moines",
+   "location": "West Des Moines, IA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NH-MAQ",
+   "name": "Derryfield Qualifier",
+   "location": "Manchester, NH, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-FSM3",
+   "name": "Fox Valley South Meet #3",
+   "location": "West Chicago, IL, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-PRQ",
+   "name": "Freedom Prep Qualifier",
+   "location": "Provo, UT, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHFM4",
+   "name": "Hadfield League Meet #4",
+   "location": "Kingfisher, OK, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-HEQ",
+   "name": "Hermantown Saturday",
+   "location": "Hermantown, MN, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-IRM3",
+   "name": "Iron Mountain League Meet #3",
+   "location": "Wilsonville, OR, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM8",
+   "name": "Lutheran North Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-MAQ3",
+   "name": "Martinsville Qualifier I",
+   "location": "Martinsville, VA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-MILKLT",
+   "name": "Milkweed Tournament",
+   "location": "Riverdale, IA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NM4",
+   "name": "North Georgia Meet #4",
+   "location": "Commerce, GA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-NEM4",
+   "name": "Northeast Florida Meet #4",
+   "location": "Jacksonville, FL, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-NNM3",
+   "name": "Northern League Meet # 3N",
+   "location": "Reno, NV, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCWM8",
+   "name": "Notre Dame de Sion Meet @ 10:30 AM",
+   "location": "Kansas City, MO, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMM7",
+   "name": "Notre Dame de Sion Meet @ 8 AM",
+   "location": "Kansas City, MO, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM5",
+   "name": "P3-3 Northern League Meet",
+   "location": "Maplewood, NJ, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SEM4",
+   "name": "Poplar Bluff Meet @ 10 AM",
+   "location": "Poplar Bluff, MO, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-BRQ",
+   "name": "Qualifier Breda",
+   "location": "Breda, NB, Netherlands",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-RI-WAQ",
+   "name": "Rhode Island Qualifier 1",
+   "location": "Warwick, RI, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-RCM3",
+   "name": "Rose City League Meet #3",
+   "location": "Portland, OR, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SFM3",
+   "name": "Silicon Forest League Meet #3",
+   "location": "Hillsboro, OR, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS7",
+   "name": "SoCal - C1 - Scrimmage 3",
+   "location": "La Cañada, CA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCS8",
+   "name": "SoCal - C2 - Scrimmage 3",
+   "location": "La Cañada, CA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MON",
+   "name": "SoCal Interviews - Leadership Award",
+   "location": "Monrovia, CA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM5",
+   "name": "Southern League Meet # 5S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNM6",
+   "name": "Southern League Meet # 6S",
+   "location": "Las Vegas, NV, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-SUNLT",
+   "name": "Sunflower Tournament",
+   "location": "Creston, IA, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MD-UBQ1",
+   "name": "Union Bridge Qualifier I",
+   "location": "Union Bridge, MD, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-UTQ",
+   "name": "Utica MVCC Qualifier",
+   "location": "Utica, NY, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-VEQ",
+   "name": "Vernon Qualifier",
+   "location": "Vernon, CT, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAMM3",
+   "name": "W&P Amarillo League Meet #3",
+   "location": "Amarillo, TX, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM4",
+   "name": "Webster Meet #2 @ 8 AM",
+   "location": "Webster Groves, MO, USA",
+   "start": "2027-01-09",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-ERQ2",
+   "name": "Combined League Sunday",
+   "location": "Elk River, MN, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-MAQ4",
+   "name": "Martinsville Qualifier II",
+   "location": "Martinsville, VA, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ7",
+   "name": "NYC Qualifier 7",
+   "location": "Brooklyn, NY, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM5",
+   "name": "P3-4 Southern League Meet",
+   "location": "Mullica Hill, NJ, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SOS4",
+   "name": "SoCal - D - Scrimmage 3",
+   "location": "Sherman Oaks, CA, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-MEQ2",
+   "name": "Susquehanna Valley Qualifier",
+   "location": "Mechanicsburg, PA, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MD-UBQ2",
+   "name": "Union Bridge Qualifier II",
+   "location": "Union Bridge, MD, USA",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-WIQ",
+   "name": "Windsor Qualifier",
+   "location": "Windsor, ON, Canada",
+   "start": "2027-01-10",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM5",
+   "name": "Robos at Joe's @ 4:30 PM",
+   "location": " St. Louis, MO, USA",
+   "start": "2027-01-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BUQ",
+   "name": "Buffalo Qualifier",
+   "location": "Buffalo, NY, USA",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-GRQ",
+   "name": "Grenada Qualifier",
+   "location": "Grenada, MS, USA",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ID-KIQ",
+   "name": "Magic Valley Qualifying Event",
+   "location": "Kimberly, ID, USA",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MT-HEQ",
+   "name": "Montana Qualifier - Helena Carroll College",
+   "location": "Helena, MT, USA",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-RAQ",
+   "name": "Ravena Qualifier",
+   "location": "Ravena, NY, USA",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-MQ",
+   "name": "Regional Yucatán — Mérida",
+   "location": "Mérida, ROO, Mexico",
+   "start": "2027-01-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MD-BAQ",
+   "name": "Baltimore Qualifier I",
+   "location": "Baltimore, MD, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-BRQ",
+   "name": "Broomfield Qualifier",
+   "location": "Broomfield, CO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SEM1",
+   "name": "Cape Central Meet @ 10 AM",
+   "location": "Cape Girardeau, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CCM3",
+   "name": "Chicago Meet #3 - Gantz",
+   "location": "Chicago, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-COLLT",
+   "name": "Columbus Muscogee League Tournament",
+   "location": "Columbus, GA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MNLT1",
+   "name": "Combined League Saturday",
+   "location": "Golden Valley, MN, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-RRLT",
+   "name": "CTX GEMS League Tournament",
+   "location": "Austin, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GCM3",
+   "name": "CTX Gulf Coast League Meet #3",
+   "location": "Corpus Christi, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WALT",
+   "name": "CTX HoT League Tournament",
+   "location": "Waco, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-HLM3",
+   "name": "CTX HSI Lobos League Meet #3",
+   "location": "San Antonio, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKDVM4",
+   "name": "DaVinci League Meet #4",
+   "location": "TBD, OK, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-DM4",
+   "name": "Douglasville - DCHS Meet #4",
+   "location": "Douglasville, GA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AR-FSQ",
+   "name": "Fort Smith Frenzy",
+   "location": "Fort Smith, AR, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FNM3",
+   "name": "FUN League Meet #3",
+   "location": "Boca Raton, FL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM5",
+   "name": "Hazelwood East Meet @ 10 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHGM4",
+   "name": "Herrington League Meet #4",
+   "location": "Tulsa, OK, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-IRISLT",
+   "name": "Iris Tournament",
+   "location": "Clear Lake, IA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-GLQ2",
+   "name": "Ironwood - Glendale Qualifier #2",
+   "location": "Glendale, AZ, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-JM3",
+   "name": "Johnson Meet #3",
+   "location": "Houston, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-KM3",
+   "name": "Kennedy Meet #3",
+   "location": "Palacios, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM4",
+   "name": "Kickapoo Meet #2 @ 10 AM",
+   "location": "Springfield, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ME-KIQ",
+   "name": "Kittery CC Qualifier",
+   "location": "Kittery, ME, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LM3",
+   "name": "Langley Meet #3",
+   "location": "Houston, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-CHQ",
+   "name": "Lowcountry Qualifier",
+   "location": "Charleston, SC, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LAM3",
+   "name": "Lubbock - A League Meet #3",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-SPQ",
+   "name": "Madison Fish Fry",
+   "location": "Sun Prairie, WI, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MWM4",
+   "name": "Marietta - Wheeler Meet #4",
+   "location": "Marietta, GA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MM3",
+   "name": "Marshall Meet #3",
+   "location": "Pearland, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKMAM4",
+   "name": "May League Meet #4",
+   "location": "Tulsa, OK, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MDM3",
+   "name": "Midland League Meet #3",
+   "location": "Odessa, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ND-MIQ",
+   "name": "Minot Qualifier",
+   "location": "Minot, ND, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM4",
+   "name": "Northern Meet #3 - Lake Forest",
+   "location": "Lake Forest, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-NIM6",
+   "name": "Northern Meet #3 - Niles",
+   "location": "Niles, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-FMQ8",
+   "name": "NYC Qualifier 8",
+   "location": "Fresh Meadows, NY, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM9",
+   "name": "Orchard Farm Meet #2 @ 8 AM",
+   "location": "St Charles, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORM3",
+   "name": "Orlando Robotics Meet #3",
+   "location": "Winter Garden, FL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENM6",
+   "name": "P3-5 Central League Meet",
+   "location": "Somerset, NJ, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM7",
+   "name": "Priory Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-ZEQ",
+   "name": "Qualifier Zeist",
+   "location": "Zeist, UT, Netherlands",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMM5",
+   "name": "Raytown Meet @ 10:30 AM",
+   "location": "Raytown, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCEM5",
+   "name": "Raytown Meet @ 8 AM",
+   "location": "Raytown, MO, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ROM4",
+   "name": "ROBOT League Meet #4",
+   "location": "Tampa, FL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NM-SHQ",
+   "name": "Rock with Wings - Shiprock Qualifier",
+   "location": "Shiprock, NM, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-SLQ",
+   "name": "Slidell Qualifier",
+   "location": "Slidell, LA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SOM3",
+   "name": "SOAR League Meet #3",
+   "location": "Roseburg, OR, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CLS4",
+   "name": "SoCal - E - Scrimmage 3",
+   "location": "Claremont, CA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS12",
+   "name": "SoCal - F1 - Scrimmage 3",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVS11",
+   "name": "SoCal - F2 - Scrimmage 3",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-OJS4",
+   "name": "SoCal - V - Scrimmage 3",
+   "location": "Ojai, CA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LAS12",
+   "name": "SoCal - W - Scrimmage 3",
+   "location": "Los Angeles, CA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SSM3",
+   "name": "South Suburbs Meet #3",
+   "location": "Downers Grove, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SEM3",
+   "name": "SouthEast Meet #3",
+   "location": "Belleville, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SWM3",
+   "name": "SouthWest Meet #3",
+   "location": "Belleville, IL, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-VIQ2",
+   "name": "St. Margaret's Qualifier",
+   "location": "Victoria, BC, Canada",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-TSM3",
+   "name": "Three Sisters League Meet #3",
+   "location": "Eugene, OR, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-WIQ",
+   "name": "Tower Hill Qualifier",
+   "location": "Wilmington, DE, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLAM3",
+   "name": "W&P Lubbock - A League Meet #3",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WMDM3",
+   "name": "W&P Midland League Meet #3",
+   "location": "Odessa, TX, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-ZINLT",
+   "name": "Zinnia League Tournament",
+   "location": "West Burlington, IA, USA",
+   "start": "2027-01-16",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MD-BAQ2",
+   "name": "Baltimore Qualifier II",
+   "location": "Baltimore, MD, USA",
+   "start": "2027-01-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-MNLT2",
+   "name": "Combined League Sunday",
+   "location": "Golden Valley, MN, USA",
+   "start": "2027-01-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-FMQ9",
+   "name": "NYC Qualifier 9",
+   "location": "Fresh Meadows, NY, USA",
+   "start": "2027-01-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOM6",
+   "name": "P3-6 Northern League Meet",
+   "location": "Morris Knolls, NJ, USA",
+   "start": "2027-01-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-VBQ",
+   "name": "Virginia Beach Qualifier",
+   "location": "Virginia Beach, VA, USA",
+   "start": "2027-01-17",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-CBM2",
+   "name": "Columbia Basin League Meet #2",
+   "location": "Pendleton, OR, USA",
+   "start": "2027-01-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NM-ALQ2",
+   "name": "Albuquerque Qualifier",
+   "location": "Albuquerque, NM, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CENTM4",
+   "name": "BCTC Georgetown League Meet",
+   "location": "Georgetown, KY, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-DNQ",
+   "name": "Delhi NCR Qualifier",
+   "location": "Delhi NCR, DL, India",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-EASTLT",
+   "name": "East League Tournament at HTCT",
+   "location": "Hazard, KY, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-LEQ",
+   "name": "Lebanon Qualifier",
+   "location": "Lebanon, OH, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-NNLT",
+   "name": "Northern League Tournament",
+   "location": "Reno, NV, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-SPQ",
+   "name": "Regional SLP — San Luis Potosí",
+   "location": "San Luis Potosí, SLP, Mexico",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-SNLT",
+   "name": "Southern League Tournament",
+   "location": "Las Vegas, NV, USA",
+   "start": "2027-01-22",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-ARQ1",
+   "name": "Arlington VA Qualifier I",
+   "location": "Arlington, VA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-DON",
+   "name": "Battle Below the Canal III Scrimmage",
+   "location": "Dover, DE, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSM8",
+   "name": "Bayless Meet @ 8 AM",
+   "location": "St. Louis, MO, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKMYLT",
+   "name": "Bishop Kelley League Tournament",
+   "location": "TULSA, OK, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWM5",
+   "name": "Camdenton Meet #2 @ 10 AM",
+   "location": "Camdenton, MO, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CIM5",
+   "name": "Central Meet #3 - Bloomington",
+   "location": "Bloomington, IL, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-UCLT",
+   "name": "CTX NERD League Tournament",
+   "location": "Universal City, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-PEQ",
+   "name": "Desert Vista - Peoria Qualifier",
+   "location": "Peoria, AZ, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-EPM3",
+   "name": "El Paso League Meet #3",
+   "location": "El Paso, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-GCM3",
+   "name": "Gulf Coast Meet #3",
+   "location": "Kenneth City, FL, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMM6",
+   "name": "Ignite Meet @ 10 AM",
+   "location": "Rolla, MO, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LBM3",
+   "name": "Lubbock - B League Meet #3",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-LYQ",
+   "name": "Lynchburg Qualifier I",
+   "location": "Lynchburg, VA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-MACM4",
+   "name": "Macon - FPDS Meet #4",
+   "location": "Macon, GA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-COQ",
+   "name": "Midlands Qualifier",
+   "location": "Columbia, SC, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-NCQ",
+   "name": "Mountain Qualifier",
+   "location": "Newe Castle, CO, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-NAM3",
+   "name": "Neil Armstrong Meet #3",
+   "location": "The Woodlands, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NM5",
+   "name": "North Georgia Meet #5",
+   "location": "Gainesville, GA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOM6",
+   "name": "P3-7 Southern League Meet",
+   "location": "Farmingdale, NJ, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BC-PMQ",
+   "name": "Port Moody Qualifier",
+   "location": "Port Moody, BC, Canada",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MIQ2",
+   "name": "Qualifier #4",
+   "location": "Mission, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-BLQ",
+   "name": "Qualifier Bladel",
+   "location": "Bladel, NB, Netherlands",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-NHQ",
+   "name": "Regional Qualifier",
+   "location": "New Haven, CT, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-RI-WOQ",
+   "name": "Rhode Island Qualifier 2",
+   "location": "Woonsocket, RI, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-CHQ2",
+   "name": "Saguaro Blossom - Microchip Qualifier #2",
+   "location": "Chandler, AZ, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-QC-SQ",
+   "name": "Saint - Laurent Qualifier",
+   "location": "Saint-Laurent (Montréal), QC, Canada",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNM6",
+   "name": "Shear Force AMA Meet @ 8 AM",
+   "location": "Ferguson, MO, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCQ3",
+   "name": "SoCal - Qualifier 1 - LCHS - Sat",
+   "location": "La Cañada, CA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-BEQ1",
+   "name": "Southeastern Pennsylvania Qualifier",
+   "location": "Bensalem, PA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SCM3",
+   "name": "Space Coast Meet #3",
+   "location": "Palm Bay, FL, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-TM5",
+   "name": "Thomas County Meet #5",
+   "location": "Bainbridge, GA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-TSLT",
+   "name": "Three Sisters League Tournament",
+   "location": "Eugene, OR, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AL-BIQ",
+   "name": "UAB Qualifier",
+   "location": "Birmingham, AL, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-UMQ",
+   "name": "Umatilla Qualifying Tournament",
+   "location": "Umatilla, OR, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WEPM3",
+   "name": "W&P El Paso League Meet #3",
+   "location": "El Paso, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLBM3",
+   "name": "W&P Lubbock - B League Meet #3",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-WAQ",
+   "name": "Walker Qualifier",
+   "location": "Walker, LA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WA-CMP",
+   "name": "Washington Championship",
+   "location": "Seattle, WA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-MVM3",
+   "name": "Willamette Valley League Meet #3",
+   "location": "Philomath, OR, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-WINBLT",
+   "name": "Winterberry Tournament",
+   "location": "Waterloo, IA, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCMM8",
+   "name": "Woodland Springs Meet @ 1 PM",
+   "location": "Olathe, KS, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCEM6",
+   "name": "Woodland Springs Meet @ 10:30 AM",
+   "location": "Olathe, KS, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWM9",
+   "name": "Woodland Springs Meet @ 8 am",
+   "location": "Olathe, KS, USA",
+   "start": "2027-01-23",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ACLT",
+   "name": "AeroCoast League Tournament",
+   "location": "Fort Walton Beach , FL, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-ARQ2",
+   "name": "Arlington VA Qualifier II",
+   "location": "Arlington, VA, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-BEQ2",
+   "name": "Bensalem Area Qualifier",
+   "location": "Bensalem, PA, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-FNLT",
+   "name": "FUN League Tournament",
+   "location": "Boca Raton, FL, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-LYQ2",
+   "name": "Lynchburg Qualifier II",
+   "location": "Lynchburg, VA, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NEM7",
+   "name": "P3-8 Northeast League Meet",
+   "location": "Oradell, NJ, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-LCQ4",
+   "name": "SoCal - Qualifier 2 - LCHS - Sun",
+   "location": "La Cañada, CA, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SFLT",
+   "name": "South Florida League Tournament",
+   "location": "Fort Lauderdale, FL, USA",
+   "start": "2027-01-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-ANQ",
+   "name": "Seletiva Regional - Pará",
+   "location": "Ananindeua, PA, Brazil",
+   "start": "2027-01-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-BEQ",
+   "name": "Bengaluru Qualifier",
+   "location": "Bengaluru, KA, India",
+   "start": "2027-01-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-POQ",
+   "name": "Clarkson University Qualifier",
+   "location": "Potsdam, NY, USA",
+   "start": "2027-01-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-GUQ",
+   "name": "Gulfport Qualifier",
+   "location": "Gulfport, MS, USA",
+   "start": "2027-01-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-PUQ",
+   "name": "Pune Qualifier",
+   "location": "Pune, MH, India",
+   "start": "2027-01-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-CIQ",
+   "name": "Regional Edo. Mex — Cuautitlán",
+   "location": "Cuautitlán Izcalli, MEX, Mexico",
+   "start": "2027-01-29",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AR-BEQ2",
+   "name": "Battle at Benton",
+   "location": "Benton, AR, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BWLT1",
+   "name": "Beaver - Wolverine Interleague Tournament",
+   "location": "Calgary, AB, Canada",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CILT",
+   "name": "Central League Tournament - Moline",
+   "location": "Moline, IL, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-CONELT",
+   "name": "Coneflower Tournament",
+   "location": "Orange City, IA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-GCLT",
+   "name": "CTX Gulf Coast League Tournament",
+   "location": "Corpus Christi, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-XSLT",
+   "name": "CTX X - Stream League Tournament",
+   "location": "Austin, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-DAILT",
+   "name": "Daisy Tournament",
+   "location": "Norwalk, IA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-DLT",
+   "name": "Douglasville - DCHS League Tournament",
+   "location": "Douglasville, GA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-TOQ2",
+   "name": "East Toronto Qualifier",
+   "location": "Toronto, ON, Canada",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ND-FAQ",
+   "name": "Fargo Qualifier",
+   "location": "Fargo, ND, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-IMWVLT",
+   "name": "Iron Mountain - Mid Valley League Tournament",
+   "location": "Wilsonville, OR, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-JLT1",
+   "name": "Johnson Tournament",
+   "location": "Houston, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UKR-KYN3",
+   "name": "Kyiv Scrimmage 3",
+   "location": "Kyiv, 30, Ukraine",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-LAVLT",
+   "name": "Lavender Tournament",
+   "location": "Marion, IA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MDLT",
+   "name": "Midland League Tournament",
+   "location": "Midland, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IND-MUQ",
+   "name": "Mumbai Qualifier",
+   "location": "Mumbai, MH, India",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHRLT",
+   "name": "Mustang League Tournament",
+   "location": "Mustang, OK, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-NOQ",
+   "name": "New Orleans Qualifier",
+   "location": "New Orleans, LA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-SEQ",
+   "name": "Northern Qualifier",
+   "location": "Severance, CO, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NWLT",
+   "name": "Northwest League Tournament",
+   "location": "Dallas, GA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-COQ10",
+   "name": "NYC Qualifier 10",
+   "location": "Corona, NY, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LAQ",
+   "name": "Qualifier #5",
+   "location": "Laredo, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SFLT",
+   "name": "Silicon Forest League Tournament",
+   "location": "Hillsboro, OR, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-DBQ1",
+   "name": "SoCal - Qualifier 3 - DBHS - Sat",
+   "location": "Diamond Bar, CA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVQ5",
+   "name": "SoCal - Qualifier 5 - MVHS - Sat",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-NEQ",
+   "name": "STAR Campus Qualifier",
+   "location": "Newark, DE, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-PHQ1",
+   "name": "Sunset - Phoenix Qualifier #1",
+   "location": "Phoenix, AZ, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-BRA-SLQ",
+   "name": "TORNEIO SESI DE ROBÓTICA - REGIONAL MARANHÃO",
+   "location": "São Luís, MA, Brazil",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-SC-DWQ",
+   "name": "Upstate Qualifier",
+   "location": "Due West, SC, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-SAS2",
+   "name": "Utah STEM Expo Scrimmage",
+   "location": "Sandy, UT, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-VWQ",
+   "name": "Van Wert Qualifier",
+   "location": "Van Wert, OH, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WMDLT",
+   "name": "W&P Midland League Tournament",
+   "location": "Midland, TX, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NH-WIQ",
+   "name": "Windham Qualifier",
+   "location": "Windham, NH, USA",
+   "start": "2027-01-30",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-HIQ",
+   "name": "Hillsboro Qualifying Tournament",
+   "location": "Hillsboro, OR, USA",
+   "start": "2027-01-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-COQ11",
+   "name": "NYC Qualifier 11",
+   "location": "Corona, NY, USA",
+   "start": "2027-01-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-DBQ2",
+   "name": "SoCal - Qualifier 4 - DBHS - Sun",
+   "location": "Diamond Bar, CA, USA",
+   "start": "2027-01-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVQ6",
+   "name": "SoCal - Qualifier 6 - MVHS - Sun",
+   "location": "Moreno Valley, CA, USA",
+   "start": "2027-01-31",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-CBM3",
+   "name": "Columbia Basin League Meet #3",
+   "location": "Pendleton, OR, USA",
+   "start": "2027-02-04",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CENTLT",
+   "name": "Central League Tournament at UK",
+   "location": "Lexington, KY, USA",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-LOQ",
+   "name": "Lodi Family Center Cloverleaf Qualifier",
+   "location": "Lodi, OH, USA",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MS-MEQ",
+   "name": "Meridian Qualifier",
+   "location": "Meridian, MS, USA",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-NELT",
+   "name": "Northeast Florida League Tournament",
+   "location": "Jacksonville, FL, USA",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MEX-SNQ",
+   "name": "Regional Nuevo León — San Nicolás",
+   "location": "San Nicolás, NLE, Mexico",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-QC-RNQ",
+   "name": "Rouyn - Noranda Qualifier",
+   "location": "Rouyn-Noranda, QC, Canada",
+   "start": "2027-02-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-OKHDLT",
+   "name": "Altus League Tournament",
+   "location": "Altus, OK, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-AMLT",
+   "name": "Amarillo League Tournament",
+   "location": "Amarillo, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-BRQ1",
+   "name": "Battle of Brookfield",
+   "location": "Brookfield, WI, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-BRLT1",
+   "name": "Bear - Rattlesnake Interleague Tournament",
+   "location": "Calgary, AB, Canada",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NLD-CMP",
+   "name": "Benelux Championship",
+   "location": "Wassenaar, ZH, Netherlands",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CILT2",
+   "name": "Central League Tournament - Macon",
+   "location": "Macon, IL, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-TOQ3",
+   "name": "Central Toronto Qualifier",
+   "location": "Toronto, ON, Canada",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-VA-CMP",
+   "name": "Chesapeake Championship",
+   "location": "Doswell, VA, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-QCQ",
+   "name": "Copper - Queen Creek Qualifier",
+   "location": "Queen Creek, AZ, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-COQ",
+   "name": "Corning Qualifier",
+   "location": "Corning, NY, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-HLLT",
+   "name": "CTX HSI Lobos League Tournament",
+   "location": "San Antonio, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-COQ1",
+   "name": "Eastern Pennsylvania Qualifier",
+   "location": "Coatesville, PA, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-EBLT",
+   "name": "Elk - Bison Interleague Tournament",
+   "location": "Sherwood Park, AB, Canada",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-GLQ3",
+   "name": "Estrella - Glendale Qualifier #3",
+   "location": "Glendale, AZ, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-CMP1",
+   "name": "Four Corners Tribal Teams Championship",
+   "location": "Kayenta, AZ, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-HUQ",
+   "name": "Hurricane Qualifier",
+   "location": "Hurricane, UT, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCMLT",
+   "name": "KC Metro League Tournament",
+   "location": "Belton, MO, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LALT",
+   "name": "Lubbock - A League Tournament",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-MLT",
+   "name": "Marshall Tournament",
+   "location": "Pearland, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-NALT",
+   "name": "Neil Armstrong Tournament",
+   "location": "The Woodlands, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-NLT",
+   "name": "North Georgia League Tournament",
+   "location": "Commerce, GA, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-WOQ12",
+   "name": "NYC Qualifier 12",
+   "location": "Woodside, NY, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ORLT",
+   "name": "Orlando Robotics League Tournament",
+   "location": "Winter Park, FL, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MA-SEQ",
+   "name": "Rhode Island Second - Chance Qualifier",
+   "location": "Seekonk, MA, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-ROLT",
+   "name": "ROBOT League Tournament",
+   "location": "Lakeland, FL, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-RCLT",
+   "name": "Rose City League Tournament",
+   "location": "Portland, OR, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-SOLT",
+   "name": "SOAR League Tournament",
+   "location": "Roseburg, OR, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-SILT",
+   "name": "Southern League Tournament",
+   "location": "Trenton, IL, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-CSQ",
+   "name": "Southern Qualifier",
+   "location": "Colorado Springs, CO, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-SWLT",
+   "name": "Southwest League Tournament",
+   "location": "Macon, GA, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLNLT",
+   "name": "STL North League Tournament",
+   "location": "St Charles, MO, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-QC-TRQ",
+   "name": "Trois - Rivières Qualifier",
+   "location": "Trois-Rivières, QC, Canada",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-BRQ",
+   "name": "University of Bridgeport Qualifier",
+   "location": "Bridgeport, CT, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WAMLT",
+   "name": "W&P Amarillo League Tournament",
+   "location": "Amarillo, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLALT",
+   "name": "W&P Lubbock - A League Tournament",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NELT",
+   "name": "West/Central Bergen Conference Northeast League",
+   "location": "Ramsey, NJ, USA",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ZAF-CTQ",
+   "name": "Western Cape Regional Qualifier",
+   "location": "Cape Town, WC, South Africa",
+   "start": "2027-02-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-RIN",
+   "name": "Adventist Robotics Scrimmage - Dallas",
+   "location": "Richardson, TX, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENLT",
+   "name": "Central Conference Central League",
+   "location": "Hightstown, NJ, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AB-CMLT1",
+   "name": "Coyote - Moose Interleague Tournament",
+   "location": "Calgary, AB, Canada",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-GCLT",
+   "name": "Gulf Coast League Tournament",
+   "location": "Palm Harbor, FL, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-SCQ2",
+   "name": "North Scarborough Qualifier",
+   "location": "Scarborough, ON, Canada",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-COQ2",
+   "name": "Red Raiders Qualifier",
+   "location": "Coatesville, PA, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-BRQ2",
+   "name": "Skirmish of Brookfield",
+   "location": "Brookfield, WI, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SOQ7",
+   "name": "SoCal - Qualifier 7 - NDHS - Sun",
+   "location": "Sherman Oaks, CA, USA",
+   "start": "2027-02-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-OXQ",
+   "name": "Miami University Qualifier",
+   "location": "Oxford, OH, USA",
+   "start": "2027-02-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-JAM-CMP",
+   "name": "Jamaica Championship",
+   "location": "Kingston 6, 02, Jamaica",
+   "start": "2027-02-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MN-CMP",
+   "name": "Minnesota Championship",
+   "location": "Burnsville, MN, USA",
+   "start": "2027-02-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-QC-STQ",
+   "name": "Sainte - Thérèse Qualifier",
+   "location": "Sainte-Thérèse, QC, Canada",
+   "start": "2027-02-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-WESTLT",
+   "name": "Western League Tournament",
+   "location": "Murray, KY, USA",
+   "start": "2027-02-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CO-CMP",
+   "name": "Colorado Championship",
+   "location": "Golden, CO, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-EPLT",
+   "name": "El Paso League Tournament",
+   "location": "El Paso, TX, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOLT",
+   "name": "Essex/Union Conference Northern League",
+   "location": "Livingston, NJ, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-HAQ",
+   "name": "Hartford Armory Qualifier",
+   "location": "Hartford, CT, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KS-KCWLT",
+   "name": "KC West League Tournament",
+   "location": "Kansas City, KS, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-KEQ",
+   "name": "Kent State University Qualifier",
+   "location": "Kent, OH, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LLT1",
+   "name": "Langley Tournament",
+   "location": "Houston, TX, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-LBLT",
+   "name": "Lubbock - B League Tournament",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ND-CMP",
+   "name": "North Dakota Championship",
+   "location": "Bismarck, ND, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AR-TBQ",
+   "name": "NW Arkansas Qualifier",
+   "location": "TBD, AR, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OK-CMP",
+   "name": "Oklahoma Championship",
+   "location": "Tulsa, OK, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-PHQ",
+   "name": "Palo Verde - Phoenix Qualifier #2",
+   "location": "Phoenix, AZ, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-PHQ",
+   "name": "Philadelphia City Qualifier",
+   "location": "Philadelphia, PA, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-SCLT",
+   "name": "Space Coast League Tournament",
+   "location": "Oviedo, FL, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-PHQ",
+   "name": "Spark Invitational",
+   "location": "Philomath, OR, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLSLT",
+   "name": "STL South League Tournament",
+   "location": " St. Louis, MO, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CSSLT",
+   "name": "Suburban South League Tournament",
+   "location": "Glen Ellyn, IL, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WEPLT",
+   "name": "W&P El Paso League Tournament",
+   "location": "El Paso, TX, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-WLBLT",
+   "name": "W&P Lubbock - B League Tournament",
+   "location": "Lubbock, TX, USA",
+   "start": "2027-02-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOLT",
+   "name": "Deep South Conference Southern League",
+   "location": "Williamstown, NJ, USA",
+   "start": "2027-02-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-STLMLT",
+   "name": "STL Mid League Tournament",
+   "location": "Wildwood, MO, USA",
+   "start": "2027-02-15",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AL-CMP",
+   "name": "Alabama Championship",
+   "location": "Huntsville, AL, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-GA-CMP",
+   "name": "Georgia Championship",
+   "location": "Gainesville, GA, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IL-CMP",
+   "name": "Illinois Championship",
+   "location": "DeKalb, IL, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-KIQ",
+   "name": "Kirtland Qualifier",
+   "location": "Kirtland, OH, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NV-CMP",
+   "name": "Nevada Championship",
+   "location": "Las Vegas, NV, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NM-CMP",
+   "name": "New Mexico Championship",
+   "location": "Albuquerque, NM, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-WI-CMP",
+   "name": "Wisconsin Championship",
+   "location": "Oshkosh, WI, USA",
+   "start": "2027-02-19",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OR-CBLT",
+   "name": "Columbia Basin League Tournament",
+   "location": "Pendleton, OR, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDDLLT1",
+   "name": "Descartes League Tournament",
+   "location": "Carlsbad, CA, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDELLT1",
+   "name": "Euclid League Tournament",
+   "location": "Carlsbad, CA, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-KCELT",
+   "name": "KC East League Tournament",
+   "location": "Lee's Summit, MO, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CENLT2",
+   "name": "Middlesex Conference Central League",
+   "location": "Chatham, NJ, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-NIQ",
+   "name": "New Iberia Qualifier",
+   "location": "New Iberia, LA, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRSQ1",
+   "name": "NYC Super Qualifiers 1",
+   "location": "Brooklyn, NY, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ON-CMP",
+   "name": "Ontario Provincial Championship",
+   "location": "St. Catharines, ON, Canada",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SELT",
+   "name": "SE League Tourament",
+   "location": "Cape Girardeau, MO, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-MVQ",
+   "name": "SoCal - Wild Card - CVHS - Sat",
+   "location": "Mission Viejo, CA, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-UCQ1",
+   "name": "Southwestern Pennsylvania Qualifier",
+   "location": "Upper St. Clair, PA, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-TX-CMP",
+   "name": "Texas - South Championship",
+   "location": "Mission, TX, USA",
+   "start": "2027-02-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NELT2",
+   "name": "East Bergen Conference Northeast League",
+   "location": "Emerson, NJ, USA",
+   "start": "2027-02-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDGLLT1",
+   "name": "Gauss League Tournament",
+   "location": "Carlsbad, CA, USA",
+   "start": "2027-02-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRSQ2",
+   "name": "NYC Super Qualifiers 2",
+   "location": "Brooklyn, NY, USA",
+   "start": "2027-02-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-UCQ2",
+   "name": "Panther Power Qualifier",
+   "location": "Upper St. Clair, PA, USA",
+   "start": "2027-02-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-SDSLLT1",
+   "name": "Turing League Tournament",
+   "location": "Carlsbad, CA, USA",
+   "start": "2027-02-21",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AP-CMP",
+   "name": "Military and Diplomatic Championship",
+   "location": "AP, AP, USA",
+   "start": "2027-02-24",
+   "source": "toa"
+  },
+  {
+   "key": "2627-ARG-CMP",
+   "name": "Argentina Championship",
+   "location": "Guaymallén, M, Argentina",
+   "start": "2027-02-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-AZ-CMP",
+   "name": "Arizona Championship",
+   "location": "Flagstaff, AZ, USA",
+   "start": "2027-02-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-BRQ",
+   "name": "Broadalbin - Perth Qualifier",
+   "location": "Broadalbin, NY, USA",
+   "start": "2027-02-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-IA-CMP",
+   "name": "Iowa Championship",
+   "location": "Coralville, IA, USA",
+   "start": "2027-02-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UT-CMP",
+   "name": "Utah Championship",
+   "location": "Sandy, UT, USA",
+   "start": "2027-02-26",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CT-CMP",
+   "name": "Connecticut Championship",
+   "location": "Storrs, CT, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DE-CMP",
+   "name": "Delaware Championship",
+   "location": "Wilmington, DE, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NCAL-CMP",
+   "name": "NorCal Regional Championship",
+   "location": "TBD, CA, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CMP1",
+   "name": "SoCal - Championship",
+   "location": "Rancho Cucamonga, CA, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-SWLT",
+   "name": "SW League Tournament",
+   "location": "Springfield, MO, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-SOLT2",
+   "name": "Upper South Conference Southern League",
+   "location": "Columbus, NJ, USA",
+   "start": "2027-02-27",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-NOLT2",
+   "name": "Northeast Conference Northern League",
+   "location": "Morristown, NJ, USA",
+   "start": "2027-02-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-RI-CMP",
+   "name": "Rhode Island Championship",
+   "location": "Warwick, RI, USA",
+   "start": "2027-02-28",
+   "source": "toa"
+  },
+  {
+   "key": "2627-KY-CMP",
+   "name": "Kentucky Championship",
+   "location": "Louisivlle, KY, USA",
+   "start": "2027-03-05",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CYP-CMP",
+   "name": "Cyprus Championship",
+   "location": "Ayios Dometios, 01, Cyprus",
+   "start": "2027-03-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-LA-CMP",
+   "name": "Louisiana Regional Championship",
+   "location": "Mandeville, LA, USA",
+   "start": "2027-03-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-PA-CMP",
+   "name": "Pennsylvania Championship",
+   "location": "Bellefonte, PA, USA",
+   "start": "2027-03-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-UKR-CMP",
+   "name": "Ukrainian Championship",
+   "location": "Kyiv, 30, Ukraine",
+   "start": "2027-03-06",
+   "source": "toa"
+  },
+  {
+   "key": "2627-CA-CMP",
+   "name": "California - San Diego Championship",
+   "location": "Carlsbad, CA, USA",
+   "start": "2027-03-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-CMP1",
+   "name": "NYC Championship",
+   "location": "Fresh Meadows, NY, USA",
+   "start": "2027-03-07",
+   "source": "toa"
+  },
+  {
+   "key": "2627-OH-CMP",
+   "name": "Ohio Championship",
+   "location": "Troy, OH, USA",
+   "start": "2027-03-11",
+   "source": "toa"
+  },
+  {
+   "key": "2627-FL-CMP",
+   "name": "Florida Championship",
+   "location": "Lakeland, FL, USA",
+   "start": "2027-03-12",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NY-CMP",
+   "name": "MVCC New York - Excelsior Championship",
+   "location": "Utica, NY, USA",
+   "start": "2027-03-13",
+   "source": "toa"
+  },
+  {
+   "key": "2627-NJ-CMP",
+   "name": "New Jersey Championship",
+   "location": "Union, NJ, USA",
+   "start": "2027-03-14",
+   "source": "toa"
+  },
+  {
+   "key": "2627-DEU-CMP",
+   "name": "Germany Championship",
+   "location": "Oberkochen, BW, Germany",
+   "start": "2027-03-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-MO-CMP",
+   "name": "Missouri/Kansas Championship",
+   "location": "Rolla, MO, USA",
+   "start": "2027-03-20",
+   "source": "toa"
+  },
+  {
+   "key": "2627-QC-CMP",
+   "name": "Québec Championship",
+   "location": "Laval, QC, Canada",
+   "start": "2027-03-20",
+   "source": "toa"
+  }
+ ]
+}
