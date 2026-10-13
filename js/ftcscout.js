@@ -18,6 +18,17 @@ async function get(path) {
 
 const place = (e) => [e.city, e.stateProv, e.country].filter(Boolean).join(', ');
 
+// Keep just the numeric fields of a score/stats object (one level deep).
+// Field names change every season, so the app shows whatever FTCScout sends.
+const SKIP = new Set(['season', 'eventCode', 'matchId', 'teamNumber', 'id']);
+export function numericFields(obj) {
+  const out = {};
+  for (const [k, v] of Object.entries(obj || {})) {
+    if (typeof v === 'number' && Number.isFinite(v) && !SKIP.has(k)) out[k] = v;
+  }
+  return out;
+}
+
 // App event keys for FTCScout events look like "2026:USCASDQ1".
 export const eventKey = (seasonYear, code) => `${seasonYear}:${code}`;
 
@@ -110,6 +121,7 @@ export async function fetchEvent(key) {
       blue,
       redScore: played ? score('red') : null,
       blueScore: played ? score('blue') : null,
+      breakdown: played ? { red: numericFields(m.scores.red), blue: numericFields(m.scores.blue) } : null,
     };
   });
   normMatches.sort(compareMatches);
@@ -125,6 +137,11 @@ export async function fetchEvent(key) {
       rp: t.stats.rp,
       tbp: t.stats.tb1,
       played: t.stats.qualMatchesPlayed,
+      // OPR = estimated points this team adds to its alliance per match.
+      opr: t.stats.opr?.totalPointsNp ?? t.stats.opr?.totalPoints ?? null,
+      avg: t.stats.avg?.totalPointsNp ?? t.stats.avg?.totalPoints ?? null,
+      oprBreakdown: numericFields(t.stats.opr),
+      avgBreakdown: numericFields(t.stats.avg),
     }));
 
   return {

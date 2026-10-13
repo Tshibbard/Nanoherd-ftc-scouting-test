@@ -242,3 +242,22 @@ dialog::backdrop { background: rgb(0 0 0 / .55); }
 .season-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: end; justify-content: space-between; }
 .season-row h2 { margin: 0; }
 .season-row .field { min-width: 200px; }
+
+.match-list { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.match-row { border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+.match-row > summary, .match-row > .summary {
+  display: grid; grid-template-columns: 52px 1fr auto 1fr; gap: 8px; align-items: center;
+  padding: 10px 12px; cursor: pointer; list-style: none;
+}
+.match-row > .summary { cursor: default; }
+.match-row > summary::-webkit-details-marker { display: none; }
+.match-row[open] > summary { border-bottom: 1px solid var(--line); }
+.match-row .mname { font-weight: 700; }
+.match-row .teams a { text-decoration: none; margin-right: 6px; }
+.match-row .teams a.me { text-decoration: underline; text-decoration-thickness: 2px; }
+.match-row .blue.teams { text-align: right; }
+.match-row .mscore { font-variant-numeric: tabular-nums; white-space: nowrap; text-align: center; }
+.match-row .mscore .win { font-size: 1.15em; font-weight: 800; }
+.match-row .table-wrap { margin: 0; padding: 0 12px 10px; }
+table.breakdown td:first-child { white-space: normal; }
+@media (max-width: 420px) { .match-row > summary, .match-row > .summary { grid-template-columns: 40px 1fr auto 1fr; gap: 6px; font-size: .9rem; } }
