@@ -39,8 +39,8 @@ Setup:
 
 1. Get a free API key from your account page on <https://theorangealliance.org>.
 2. In GitHub, go to **Settings → Secrets and variables → Actions → New repository secret**. Name it `TOA_API_KEY` and paste the key as the value.
-3. Add the TOA keys of your events to `data/toa-events.txt`, and your team numbers to `data/toa-teams.txt` (this is used by the team search when FTCScout is down), one per line. Pushing that file runs the Action. You can also run it by hand from **Actions → Orange Alliance snapshot → Run workflow**, optionally with extra event keys.
-4. The Action also runs hourly to keep snapshots fresh. It only commits when the data actually changed. Scheduled runs only happen on the repository's default branch.
+3. Add the TOA keys of your events to `data/toa-events.txt`, and your team numbers to `data/toa-teams.txt` (this is used by the team search when FTCScout is down), one per line. Then run it by hand from **Actions → Orange Alliance snapshot → Run workflow**, optionally with extra event keys or team numbers.
+4. The Action runs only when started by hand. Run it again whenever you want fresher backup data. It only commits when the data actually changed.
 
 Optional: a key entered in the app's **Settings** tab enables live TOA requests from that device. It's stored only on that device.
 

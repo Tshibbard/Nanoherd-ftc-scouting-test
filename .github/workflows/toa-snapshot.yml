@@ -3,6 +3,9 @@ name: Orange Alliance snapshot
 # Uses the TOA_API_KEY repository secret to download Orange Alliance data
 # into data/toa/. The web app reads those JSON files as its backup data
 # source, so the key never ships to browsers.
+#
+# Manual only: run it from Actions > Orange Alliance snapshot > Run workflow.
+# (The hourly schedule and the run on data/toa-*.txt changes were removed.)
 
 on:
   workflow_dispatch:
@@ -15,12 +18,6 @@ on:
         description: 'Extra team numbers to fetch event lists for (space separated)'
         required: false
         default: ''
-  schedule:
-    - cron: '17 * * * *' # hourly; schedules only run on the default branch
-  push:
-    paths:
-      - 'data/toa-events.txt'
-      - 'data/toa-teams.txt'
 
 permissions:
   contents: write
